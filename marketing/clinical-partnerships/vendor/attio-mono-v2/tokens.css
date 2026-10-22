@@ -1,0 +1,223 @@
+/*
+ * Attio Mono design tokens.
+ * Primary tokens work on their own; the accent-* tokens are an optional layer.
+ * Fonts: load Inter (400;500;600) and Inter Tight (500;600) from Google Fonts:
+ * <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&display=swap">
+ * Dark mode follows the system setting; force a theme with data-theme="light" or "dark" on <html>.
+ */
+
+:root {
+  --surface: #ffffff;
+  --canvas: #f7f7f8;
+  --ink: #18181b;
+  --body: #3f3f46;
+  --muted: #71717a;
+  --faint: #85858d;
+  --line: #e7e7ea;
+  --line-strong: #d6d6db;
+  --primary: #18181b;
+  --on-primary: #ffffff;
+  --good: #15803d;
+  --good-tint: #ecfdf3;
+  --warn: #b45309;
+  --warn-tint: #fffbeb;
+  --bad: #b91c1c;
+  --bad-tint: #fef2f2;
+  --accent: #2f6fe4;
+  --accent-strong: #1d4fb8;
+  --accent-tint: #eef3fc;
+  --accent-from: #0f2a5c;
+  --accent-to: #2f6fe4;
+  --on-accent: #ffffff;
+  --shadow-xs: 0 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-floating: 0 1px 3px #0000000a, 0 0 2px #1c28402e;
+  --accent-gradient: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --surface: #0f0f11;
+    --canvas: #18181b;
+    --ink: #f4f4f5;
+    --body: #d4d4d8;
+    --muted: #a1a1aa;
+    --faint: #71717a;
+    --line: #27272a;
+    --line-strong: #3f3f46;
+    --primary: #f4f4f5;
+    --on-primary: #111113;
+    --good: #4ade80;
+    --good-tint: #0f2418;
+    --warn: #fbbf24;
+    --warn-tint: #2a1f0a;
+    --bad: #f87171;
+    --bad-tint: #2a1213;
+    --accent: #6b9bff;
+    --accent-strong: #8fb3ff;
+    --accent-tint: #121c33;
+    --accent-from: #1c3f86;
+    --accent-to: #3a6fd6;
+    --on-accent: #ffffff;
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-floating: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 2px rgba(0, 0, 0, 0.2);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --surface: #0f0f11;
+  --canvas: #18181b;
+  --ink: #f4f4f5;
+  --body: #d4d4d8;
+  --muted: #a1a1aa;
+  --faint: #71717a;
+  --line: #27272a;
+  --line-strong: #3f3f46;
+  --primary: #f4f4f5;
+  --on-primary: #111113;
+  --good: #4ade80;
+  --good-tint: #0f2418;
+  --warn: #fbbf24;
+  --warn-tint: #2a1f0a;
+  --bad: #f87171;
+  --bad-tint: #2a1213;
+  --accent: #6b9bff;
+  --accent-strong: #8fb3ff;
+  --accent-tint: #121c33;
+  --accent-from: #1c3f86;
+  --accent-to: #3a6fd6;
+  --on-accent: #ffffff;
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-floating: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 2px rgba(0, 0, 0, 0.2);
+  color-scheme: dark;
+}
+
+:root {
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Inter Tight", "Inter", system-ui, sans-serif;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --radius-sm: 5px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+}
+
+/* Type styles: apply as classes, e.g. <h1 class="display-lg"> */
+.display-xl { font-family: var(--font-display); font-size: 64px; line-height: 61px; font-weight: 600; letter-spacing: -0.02em; }
+.display-lg { font-family: var(--font-display); font-size: 40px; line-height: 44px; font-weight: 600; letter-spacing: -0.025em; }
+.heading { font-family: var(--font-display); font-size: 24px; line-height: 29px; font-weight: 600; letter-spacing: -0.02em; }
+.title { font-family: var(--font-display); font-size: 18px; line-height: 24px; font-weight: 600; letter-spacing: -0.015em; }
+.subhead { font-family: var(--font-display); font-size: 15px; line-height: 21px; font-weight: 600; letter-spacing: -0.012em; }
+.body { font-family: var(--font-sans); font-size: 16px; line-height: 22px; font-weight: 500; letter-spacing: -0.01em; }
+.body-sm { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 500; letter-spacing: -0.01em; }
+.label { font-family: var(--font-sans); font-size: 13px; line-height: 16px; font-weight: 500; letter-spacing: -0.005em; }
+.caption { font-family: var(--font-sans); font-size: 12px; line-height: 18px; font-weight: 500; }
+.micro { font-family: var(--font-sans); font-size: 11px; line-height: 14px; font-weight: 500; }
+
+/* Sensible defaults */
+body { background: var(--surface); color: var(--body); font-family: var(--font-sans); font-weight: 500; letter-spacing: -0.01em; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4 { font-family: var(--font-display); color: var(--ink); font-weight: 600; text-wrap: balance; }
+:focus-visible { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }
+
+
+/* v2 additions. Existing palette/type/shape values remain unchanged.
+ * Classes use am- prefixes and are opt-in. Breakpoint: 768px (layout JSON).
+ * CSS custom properties cannot be used in media-query conditions.
+ */
+:root {
+  --content-max: 1024px;
+  --reading-max: 65ch;
+  --page-gutter: var(--space-4);
+  --card-padding: var(--space-5);
+  --motion-duration: 150ms;
+  --motion-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --focus-width: 2px;
+  --focus-offset: 2px;
+  --focus-color: var(--ink);
+  --disabled-opacity: 0.4;
+  --button-hover: var(--body);
+  --button-active: var(--muted);
+  --reading-size: 16px;
+  --reading-line-height: 1.5;
+  --reading-weight: 400;
+}
+[data-accent="on"], .am-button--accent { --focus-color: var(--accent); }
+
+/* 1. Button states; data-preview-state is for static specimens only. */
+.am-button {
+  box-sizing: border-box;
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--space-2); max-width: 100%; min-width: 0;
+  font: 500 13px/16px var(--font-sans); letter-spacing: -0.005em;
+  padding: 9px 14px; border: 1px solid transparent;
+  border-radius: var(--radius-md); cursor: pointer;
+  transition: color var(--motion-duration) var(--motion-easing), background-color var(--motion-duration) var(--motion-easing), border-color var(--motion-duration) var(--motion-easing);
+}
+.am-button--primary { background: var(--primary); color: var(--on-primary); box-shadow: var(--shadow-xs); }
+.am-button--secondary { background: var(--surface); color: var(--ink); border-color: var(--line-strong); }
+.am-button--accent { background: var(--accent-gradient); color: var(--on-accent); box-shadow: var(--shadow-xs); }
+.am-button--primary:hover:not(:disabled), .am-button--primary[data-preview-state="hover"] { background: var(--button-hover); }
+.am-button--primary:active:not(:disabled), .am-button--primary[data-preview-state="active"] { background: var(--button-active); }
+.am-button--secondary:hover:not(:disabled), .am-button--secondary[data-preview-state="hover"] { border-color: var(--muted); }
+.am-button--secondary:active:not(:disabled), .am-button--secondary[data-preview-state="active"] { background: var(--canvas); border-color: var(--ink); }
+.am-button--accent:hover:not(:disabled), .am-button--accent[data-preview-state="hover"] { background-image: linear-gradient(#00000014, #00000014), var(--accent-gradient); }
+.am-button--accent:active:not(:disabled), .am-button--accent[data-preview-state="active"] { background-image: linear-gradient(#00000029, #00000029), var(--accent-gradient); }
+.am-button[data-preview-state="focus"] { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }
+.am-button:disabled { opacity: var(--disabled-opacity); cursor: not-allowed; }
+
+/* 2. Field recipes. Set aria-invalid and associate labels/help in markup. */
+.am-field { display: grid; gap: var(--space-2); min-width: 0; }
+.am-field-label { font: 500 13px/16px var(--font-sans); color: var(--ink); }
+.am-input {
+  box-sizing: border-box; width: 100%; min-width: 0;
+  background: var(--surface); color: var(--ink);
+  border: 1px solid var(--line-strong); border-radius: var(--radius-md);
+  padding: 10px 12px; font: 500 16px/22px var(--font-sans);
+  transition: border-color var(--motion-duration) var(--motion-easing);
+}
+.am-input::placeholder { color: var(--muted); opacity: 1; }
+.am-input:hover:not(:disabled) { border-color: var(--muted); }
+.am-input[aria-invalid="true"] { border-color: var(--bad); }
+.am-input:disabled { opacity: var(--disabled-opacity); cursor: not-allowed; }
+.am-field-help, .am-field-error { margin: 0; font: 500 12px/18px var(--font-sans); color: var(--muted); }
+.am-field-error { color: var(--bad); }
+
+/* 3 & 4. Responsive recipes and named layout/motion tokens. */
+.am-container { box-sizing: border-box; width: 100%; max-width: var(--content-max); margin-inline: auto; padding-inline: var(--page-gutter); }
+.am-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-3); }
+.am-grid > * { min-width: 0; }
+.am-actions { display: flex; flex-direction: column; align-items: stretch; gap: var(--space-2); }
+.am-card { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+.am-card-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); padding: var(--card-padding); border-bottom: 1px solid var(--line); }
+.am-card-body { padding: var(--card-padding); }
+.am-responsive { overflow-wrap: anywhere; }
+.display-xl.am-responsive { font-size: 40px; line-height: 44px; }
+.display-lg.am-responsive { font-size: 32px; line-height: 36px; }
+@media (min-width: 768px) {
+  :root { --page-gutter: var(--space-6); --card-padding: var(--space-6); }
+  .am-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .am-actions { flex-direction: row; flex-wrap: wrap; align-items: center; }
+  .display-xl.am-responsive { font-size: 64px; line-height: 61px; }
+  .display-lg.am-responsive { font-size: 40px; line-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --motion-duration: 0ms; }
+}
+
+/* 5. Floating surfaces only; ordinary cards remain shadow-free. */
+.am-floating { box-sizing: border-box; max-width: 100%; padding: var(--space-3); background: var(--surface); color: var(--body); border: 1px solid var(--line); border-radius: var(--radius-md); box-shadow: var(--shadow-floating); }
+
+/* 6. Long-form reading is separate from the weight-500 UI body style. */
+.am-reading { max-width: var(--reading-max); font-family: var(--font-sans); font-size: var(--reading-size); line-height: var(--reading-line-height); font-weight: var(--reading-weight); letter-spacing: normal; color: var(--body); overflow-wrap: anywhere; }
+.am-reading p { margin-block: 0 var(--space-4); }
+.am-reading p:last-child { margin-bottom: 0; }
+.am-reading a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+[data-accent="on"] .am-reading a { color: var(--accent-strong); }

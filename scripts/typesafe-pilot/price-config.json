@@ -1,0 +1,8 @@
+{
+  "review_status": "parent_verified_live",
+  "source_url": "https://docs.typesafe.ai/models",
+  "retrieved_at": "2026-10-15T07:26:41Z",
+  "input_usd_per_million_tokens": 0.042,
+  "output_usd_per_million_tokens": 0,
+  "maximum_run_usd": 0.1
+}

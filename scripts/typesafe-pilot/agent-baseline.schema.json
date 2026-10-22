@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Current-agent extraction comparator, recorded before TypeSafe output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "review_status",
+    "method",
+    "reviewed_before_typesafe_output",
+    "window_status_by_stimulus"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "review_status": {
+      "enum": [
+        "pending",
+        "completed_before_typesafe_output"
+      ]
+    },
+    "method": {
+      "const": "current_agent_manual_extraction_from_frozen_synthetic_pages"
+    },
+    "reviewed_before_typesafe_output": {
+      "type": "boolean"
+    },
+    "window_status_by_stimulus": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^(fixed-[0-9]{2}|rolling-[0-9]{2}|not-stated-[0-9]{2}|not-checked-[0-9]{2}|challenge-[a-z-]+-[0-9]{2})$"
+      },
+      "additionalProperties": {
+        "enum": [
+          "fixed_dates",
+          "rolling",
+          "not_stated",
+          "not_checked",
+          "unclear"
+        ]
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "review_status": {
+            "const": "completed_before_typesafe_output"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "reviewed_before_typesafe_output": {
+            "const": true
+          },
+          "window_status_by_stimulus": {
+            "minProperties": 40,
+            "maxProperties": 40
+          }
+        }
+      }
+    }
+  ]
+}

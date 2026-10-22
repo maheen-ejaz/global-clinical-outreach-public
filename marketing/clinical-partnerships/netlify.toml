@@ -1,0 +1,4 @@
+# Run the build from the repository root; deploy only the explicitly selected dist.
+[build]
+  publish = "dist"
+# Manual deployment only. No Git build connection or hooks.

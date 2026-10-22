@@ -1,0 +1,206 @@
+[
+  {
+    "path": "assets/images/institutional/hero-640.webp",
+    "size_bytes": 23908,
+    "sha256": "608d6f18560a03ceb1a1090072145ac263e3b12b7474dd6bba77459786138235",
+    "kind": "ai_generated_illustrative_image",
+    "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+    "original": "qa/institutional-imagery/originals/hero.png",
+    "prompt_set": "qa/institutional-imagery/prompts.json",
+    "dimensions_px": {
+      "width": 640,
+      "height": 480
+    },
+    "alt_text": "AI-generated architectural image of an academic medical teaching wing with faculty in the middle distance.",
+    "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+    "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+    "export_quality": 72
+  },
+  {
+    "path": "assets/images/institutional/hero-960.webp",
+    "size_bytes": 46846,
+    "sha256": "fd0aca1b7d37c9e06572fde1c7146b1c7cf0bbeaee33e4a6c72a439d9c032d1f",
+    "kind": "ai_generated_illustrative_image",
+    "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+    "original": "qa/institutional-imagery/originals/hero.png",
+    "prompt_set": "qa/institutional-imagery/prompts.json",
+    "dimensions_px": {
+      "width": 960,
+      "height": 720
+    },
+    "alt_text": "AI-generated architectural image of an academic medical teaching wing with faculty in the middle distance.",
+    "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+    "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+    "export_quality": 72
+  },
+  {
+    "path": "assets/images/institutional/learning-640.webp",
+    "size_bytes": 37440,
+    "sha256": "842f64e2f99281a466db9b3896d329219d7c4383421435e359dd8048bb35829f",
+    "kind": "ai_generated_illustrative_image",
+    "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+    "original": "qa/institutional-imagery/originals/learning.png",
+    "prompt_set": "qa/institutional-imagery/prompts.json",
+    "dimensions_px": {
+      "width": 640,
+      "height": 480
+    },
+    "alt_text": "AI-generated architectural image of an academic medical learning atrium with faculty in the middle distance.",
+    "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+    "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+    "export_quality": 72
+  },
+  {
+    "path": "assets/images/institutional/learning-960.webp",
+    "size_bytes": 74004,
+    "sha256": "d19b8ceabe6ce078ae233900c4284674d98b56e403f5b92c0ad4e329772d5e54",
+    "kind": "ai_generated_illustrative_image",
+    "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+    "original": "qa/institutional-imagery/originals/learning.png",
+    "prompt_set": "qa/institutional-imagery/prompts.json",
+    "dimensions_px": {
+      "width": 960,
+      "height": 720
+    },
+    "alt_text": "AI-generated architectural image of an academic medical learning atrium with faculty in the middle distance.",
+    "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+    "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+    "export_quality": 72
+  },
+  {
+    "path": "assets/images/institutional/observership-480.webp",
+    "size_bytes": 14948,
+    "sha256": "80dead63a8c14d2d97ce2b3417c9a049d1ebc1a5e7f62d1589553f83cb1c8e34",
+    "kind": "ai_generated_illustrative_image",
+    "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+    "original": "qa/institutional-imagery/originals/observership.png",
+    "prompt_set": "qa/institutional-imagery/prompts.json",
+    "dimensions_px": {
+      "width": 480,
+      "height": 360
+    },
+    "alt_text": "AI-generated architectural image of a clinical teaching corridor with a small faculty group in the middle distance.",
+    "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+    "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+    "export_quality": 72
+  },
+  {
+    "path": "assets/images/institutional/observership-960.webp",
+    "size_bytes": 43432,
+    "sha256": "44e370b6c35a57d5c7d4170b9e182a4f16fa3a866b63367c1e0bead49429db82",
+    "kind": "ai_generated_illustrative_image",
+    "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+    "original": "qa/institutional-imagery/originals/observership.png",
+    "prompt_set": "qa/institutional-imagery/prompts.json",
+    "dimensions_px": {
+      "width": 960,
+      "height": 720
+    },
+    "alt_text": "AI-generated architectural image of a clinical teaching corridor with a small faculty group in the middle distance.",
+    "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+    "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+    "export_quality": 72
+  },
+  {
+    "path": "assets/images/institutional/elective-480.webp",
+    "size_bytes": 19534,
+    "sha256": "5299ff5ceadffe19c4a5119f4600087d8e10aa596f5cc9db8ea5aad95757245d",
+    "kind": "ai_generated_illustrative_image",
+    "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+    "original": "qa/institutional-imagery/originals/elective.png",
+    "prompt_set": "qa/institutional-imagery/prompts.json",
+    "dimensions_px": {
+      "width": 480,
+      "height": 360
+    },
+    "alt_text": "AI-generated architectural image of a modern clinical skills teaching centre with faculty in the middle distance.",
+    "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+    "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+    "export_quality": 72
+  },
+  {
+    "path": "assets/images/institutional/elective-960.webp",
+    "size_bytes": 54926,
+    "sha256": "3cad4a60959d527d2429447463f4f93a1cdfd40614c5fd608f8b89567383f216",
+    "kind": "ai_generated_illustrative_image",
+    "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+    "original": "qa/institutional-imagery/originals/elective.png",
+    "prompt_set": "qa/institutional-imagery/prompts.json",
+    "dimensions_px": {
+      "width": 960,
+      "height": 720
+    },
+    "alt_text": "AI-generated architectural image of a modern clinical skills teaching centre with faculty in the middle distance.",
+    "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+    "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+    "export_quality": 72
+  },
+  {
+    "path": "assets/images/institutional/attachment-480.webp",
+    "size_bytes": 15916,
+    "sha256": "e71f3b45ad93447ddeddbdfd8beea3eaa5061b440960029d34a5952a5202ceca",
+    "kind": "ai_generated_illustrative_image",
+    "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+    "original": "qa/institutional-imagery/originals/attachment.png",
+    "prompt_set": "qa/institutional-imagery/prompts.json",
+    "dimensions_px": {
+      "width": 480,
+      "height": 360
+    },
+    "alt_text": "AI-generated architectural image of a clinical department briefing suite in a generic academic medical centre.",
+    "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+    "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+    "export_quality": 72
+  },
+  {
+    "path": "assets/images/institutional/attachment-960.webp",
+    "size_bytes": 49100,
+    "sha256": "ec1937a11c000bf97be84a7e6905e22a26cc5a2024362cbf410f17c89013d8d7",
+    "kind": "ai_generated_illustrative_image",
+    "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+    "original": "qa/institutional-imagery/originals/attachment.png",
+    "prompt_set": "qa/institutional-imagery/prompts.json",
+    "dimensions_px": {
+      "width": 960,
+      "height": 720
+    },
+    "alt_text": "AI-generated architectural image of a clinical department briefing suite in a generic academic medical centre.",
+    "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+    "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+    "export_quality": 72
+  },
+  {
+    "path": "assets/images/institutional/fellowship-480.webp",
+    "size_bytes": 19700,
+    "sha256": "165e091d832d5bf0003f8344daffeeb93ec90555f56dfad97136f577ba5feddd",
+    "kind": "ai_generated_illustrative_image",
+    "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+    "original": "qa/institutional-imagery/originals/fellowship.png",
+    "prompt_set": "qa/institutional-imagery/prompts.json",
+    "dimensions_px": {
+      "width": 480,
+      "height": 360
+    },
+    "alt_text": "AI-generated architectural image of a specialist teaching laboratory with microscopy workstations.",
+    "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+    "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+    "export_quality": 72
+  },
+  {
+    "path": "assets/images/institutional/fellowship-960.webp",
+    "size_bytes": 56758,
+    "sha256": "61fde06fe558eb052c09fb910b6ef9f144228f44ad6156afc160d110bab00d96",
+    "kind": "ai_generated_illustrative_image",
+    "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+    "original": "qa/institutional-imagery/originals/fellowship.png",
+    "prompt_set": "qa/institutional-imagery/prompts.json",
+    "dimensions_px": {
+      "width": 960,
+      "height": 720
+    },
+    "alt_text": "AI-generated architectural image of a specialist teaching laboratory with microscopy workstations.",
+    "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+    "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+    "export_quality": 72
+  }
+]

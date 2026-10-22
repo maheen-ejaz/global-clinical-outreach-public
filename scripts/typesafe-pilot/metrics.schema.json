@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Synthetic TypeSafe pilot evaluation metrics",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocol_id",
+    "analysis_revision",
+    "model",
+    "review_status",
+    "natural_page_cases",
+    "not_checked_controls",
+    "challenge_cases",
+    "option_order",
+    "provenance",
+    "agent_baseline",
+    "attempt_accounting",
+    "price_snapshot",
+    "usage",
+    "human_review_time_saving_percent",
+    "integration_roi_claim",
+    "acceptance",
+    "no_app_update",
+    "run_metadata",
+    "run_summary"
+  ],
+  "properties": {
+    "protocol_id": {
+      "const": "gco-window-status-synthetic-v2"
+    },
+    "analysis_revision": {
+      "const": 2
+    },
+    "model": {
+      "const": "jev-1.13.0"
+    },
+    "review_status": {
+      "enum": [
+        "parent_adjudicated_provisional",
+        "parent_adjudicated"
+      ]
+    },
+    "natural_page_cases": {
+      "type": "object"
+    },
+    "not_checked_controls": {
+      "type": "object"
+    },
+    "challenge_cases": {
+      "type": "object"
+    },
+    "option_order": {
+      "type": "object"
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "agent_baseline": {
+      "type": "object"
+    },
+    "attempt_accounting": {
+      "type": "object"
+    },
+    "price_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_url",
+        "retrieved_at",
+        "input_usd_per_million_tokens",
+        "output_usd_per_million_tokens",
+        "maximum_run_usd"
+      ],
+      "properties": {
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "retrieved_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "input_usd_per_million_tokens": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "output_usd_per_million_tokens": {
+          "type": "number",
+          "minimum": 0
+        },
+        "maximum_run_usd": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.1
+        }
+      }
+    },
+    "usage": {
+      "type": "object"
+    },
+    "human_review_time_saving_percent": {
+      "type": "null"
+    },
+    "integration_roi_claim": {
+      "const": false
+    },
+    "acceptance": {
+      "type": "object"
+    },
+    "no_app_update": {
+      "const": true
+    },
+    "run_metadata": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "run_summary": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  }
+}

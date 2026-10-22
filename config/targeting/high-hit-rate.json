@@ -1,0 +1,28 @@
+{
+  "name": "High hit rate",
+  "description": "Start here: providers that accept IMGs and have a named person whose email passed or is likely to pass our check.",
+  "require": {
+    "accepts_imgs": true,
+    "named_person": true,
+    "email_check": [
+      "verified",
+      "likely"
+    ]
+  },
+  "prefer": {
+    "provider_types": [
+      "community"
+    ],
+    "sources": [
+      "img_directory",
+      "high_img_hospital"
+    ],
+    "open_to_partnerships": true,
+    "contactable": true,
+    "not_catch_all": true,
+    "min_img_fit": 3
+  },
+  "exclude": {
+    "do_not_contact": true
+  }
+}

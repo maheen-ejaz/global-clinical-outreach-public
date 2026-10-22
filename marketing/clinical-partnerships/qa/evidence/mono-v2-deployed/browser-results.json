@@ -1,0 +1,245 @@
+{
+  "url": "https://partners-preview.goocampusglobal.com/",
+  "checkedAt": "2026-10-10T13:10:29.930Z",
+  "browsers": [
+    {
+      "name": "chromium",
+      "version": "156.0.8078.4",
+      "keyboard": "passed",
+      "keyboardTabKey": "Tab",
+      "clipboardSuccessAndFallback": "passed",
+      "nativeClipboard": "passed",
+      "noJavaScript": "passed",
+      "errors": []
+    },
+    {
+      "name": "webkit",
+      "version": "27.2",
+      "keyboard": "passed",
+      "keyboardTabKey": "Alt+Tab",
+      "clipboardSuccessAndFallback": "passed",
+      "nativeClipboard": "not separately exercised",
+      "noJavaScript": "passed",
+      "errors": []
+    },
+    {
+      "name": "firefox",
+      "version": "157.0",
+      "keyboard": "passed",
+      "keyboardTabKey": "Tab",
+      "clipboardSuccessAndFallback": "passed",
+      "nativeClipboard": "not separately exercised",
+      "noJavaScript": "passed",
+      "errors": []
+    }
+  ],
+  "layouts": [
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "width": 320,
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "width": 768,
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "browser": "chromium",
+      "width": 1440,
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "browser": "webkit",
+      "theme": "light",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "browser": "webkit",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "browser": "webkit",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "browser": "webkit",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "browser": "webkit",
+      "width": 320,
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "browser": "webkit",
+      "width": 768,
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "browser": "webkit",
+      "width": 1440,
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "browser": "firefox",
+      "theme": "light",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "browser": "firefox",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "browser": "firefox",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "browser": "firefox",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "browser": "firefox",
+      "width": 320,
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "browser": "firefox",
+      "width": 768,
+      "textScale": "200%",
+      "overflow": false
+    },
+    {
+      "browser": "firefox",
+      "width": 1440,
+      "textScale": "200%",
+      "overflow": false
+    }
+  ],
+  "accessibility": [
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "violations": []
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "violations": []
+    },
+    {
+      "browser": "webkit",
+      "theme": "light",
+      "violations": []
+    },
+    {
+      "browser": "webkit",
+      "theme": "dark",
+      "violations": []
+    },
+    {
+      "browser": "firefox",
+      "theme": "light",
+      "violations": []
+    },
+    {
+      "browser": "firefox",
+      "theme": "dark",
+      "violations": []
+    }
+  ],
+  "durationSeconds": 28
+}

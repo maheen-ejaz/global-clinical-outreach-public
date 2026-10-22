@@ -1,0 +1,18 @@
+/* Outreach uses the same Attio Mono v2 roles as sign-in and research. */
+.outreach-editor { display: grid; gap: var(--space-4); }
+.outreach-editor label, #panel-outreach .actions > label { display: grid; gap: var(--space-2); min-width: 0; font: 500 13px/16px var(--font-sans); color: var(--ink); }
+.outreach-editor .search { width: 100%; min-width: 0; }
+.outreach-editor textarea { font-size: var(--reading-size); line-height: var(--reading-line-height); font-weight: var(--reading-weight); resize: vertical; }
+.outreach-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: var(--space-4); }
+.outreach-editor .outreach-check { display: flex; align-items: flex-start; gap: var(--space-3); margin-bottom: var(--space-3); font-size: 14px; line-height: 20px; color: var(--body); }
+.outreach-check input { margin-top: var(--space-1); flex: none; accent-color: var(--accent); }
+#outreachHistory { padding-left: var(--space-6); }
+#outreachHistory li { margin-bottom: var(--space-4); }
+#outreachHistory pre { white-space: pre-wrap; overflow-wrap: anywhere; max-width: var(--reading-max); font-family: var(--font-sans); font-size: var(--reading-size); line-height: var(--reading-line-height); font-weight: var(--reading-weight); background: var(--canvas); border: 1px solid var(--line); border-radius: var(--radius-md); padding: var(--space-3); }
+#outreachSource a { overflow-wrap: anywhere; }
+#outreachTable { min-width: 760px; }
+#outreachTable td { max-width: 280px; overflow-wrap: anywhere; }
+#outreachTable th:last-child, #outreachTable td:last-child { width: 100px; min-width: 100px; overflow-wrap: normal; }
+.outreach-editor details { border-top: 1px solid var(--line); padding-top: var(--space-4); }
+.outreach-editor summary { padding-block: var(--space-2); font: 600 15px/21px var(--font-display); }
+@media (max-width: 767px) { .outreach-columns { grid-template-columns: minmax(0, 1fr); } }

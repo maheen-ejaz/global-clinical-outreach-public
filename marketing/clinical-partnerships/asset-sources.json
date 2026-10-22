@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "observed_on_utc": "2026-10-10",
+  "site": {
+    "homepage": {
+      "url": "https://www.goocampusworld.com/",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_bytes": 112471,
+      "page_title": "GooCampus",
+      "observations": [
+        "The fetched homepage HTML references /logo.png as an image source.",
+        "The homepage navigation/footer links Services to /mentorship, Courses to /courses, Contact us to /contact-us, Privacy Policy to /privacy, and Terms & Conditions to /tnc."
+      ]
+    },
+    "links": [
+      {
+        "label": "Services",
+        "homepage_href": "/mentorship",
+        "url": "https://www.goocampusworld.com/mentorship",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "response_bytes": 80628,
+        "page_title": "GooCampus",
+        "observed_page_content": "The page includes the section heading \u201cMentorship Program\u201d and the supporting heading \u201cGuiding Future Doctors: Enroll in Our Mentorship Program\u201d."
+      },
+      {
+        "label": "Courses",
+        "homepage_href": "/courses",
+        "url": "https://www.goocampusworld.com/courses",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "response_bytes": 39826,
+        "page_title": "GooCampus",
+        "observed_page_content": "The page currently displays \u201cFind Mentors\u201d, \u201cLogin\u201d, \u201cApply as Mentor\u201d, and \u201cLoading...\u201d; a course catalogue was not present in the returned page content."
+      },
+      {
+        "label": "Contact us",
+        "homepage_href": "/contact-us",
+        "url": "https://www.goocampusworld.com/contact-us",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "response_bytes": 50799,
+        "page_title": "GooCampus",
+        "observed_page_content": "The page includes \u201cpartner with us\u201d, invites collaboration, and lists info@goocampus.in."
+      },
+      {
+        "label": "Privacy Policy",
+        "homepage_href": "/privacy",
+        "url": "https://www.goocampusworld.com/privacy",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "response_bytes": 54567,
+        "page_title": "GooCampus",
+        "observed_page_content": "The page has the heading \u201cPrivacy Policy\u201d and includes sections on user information and cookies."
+      },
+      {
+        "label": "Terms & Conditions",
+        "homepage_href": "/tnc",
+        "url": "https://www.goocampusworld.com/tnc",
+        "http_status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "response_bytes": 56461,
+        "page_title": "GooCampus",
+        "observed_page_content": "The page has the heading \u201cTerms and Conditions\u201d and a \u201cUSE OF CONTENT\u201d section.",
+        "brand_asset_rights_observation": "The page states that logos, brands, marks, and other site identifiers are owned or used under license by the business or associated entities, and that public or commercial reproduction is prohibited without the relevant entity\u2019s written permission.",
+        "source_url": "https://www.goocampusworld.com/tnc"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "path": "assets/images/goocampus-logo.png",
+      "size_bytes": 135729,
+      "sha256": "04654eb192c370f712b6fe467effce78acb72d8d83efb28979fcf6d7f0411e99",
+      "kind": "brand_logo",
+      "format": "PNG",
+      "dimensions_px": {
+        "width": 684,
+        "height": 684
+      },
+      "source_url": "https://www.goocampusworld.com/logo.png",
+      "source_page_url": "https://www.goocampusworld.com/",
+      "provenance": "Downloaded as served from the live GooCampus homepage logo path; retained in its original square dimensions and proportions."
+    },
+    {
+      "path": "assets/fonts/inter-latin-400.woff2",
+      "size_bytes": 23804,
+      "sha256": "48a0c2503a9c8ec4153302693fff56b3281aba5ce5afd7cf2bd51a03b098cd22",
+      "kind": "font",
+      "family": "Inter",
+      "weight": 400,
+      "style": "normal",
+      "subset": "Latin",
+      "format": "WOFF2",
+      "font_version_in_source_url": "v20",
+      "source_url": "https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2",
+      "source_css_url": "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap",
+      "license": "SIL Open Font License 1.1",
+      "license_asset": "assets/fonts/OFL-Inter.txt",
+      "license_source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt"
+    },
+    {
+      "path": "assets/fonts/inter-latin-500.woff2",
+      "size_bytes": 24272,
+      "sha256": "f3779f1efccc4bdcdf9c0a02ab95bf6bd092ed09c48c08cedc725889edd1d19f",
+      "kind": "font",
+      "family": "Inter",
+      "weight": 500,
+      "style": "normal",
+      "subset": "Latin",
+      "format": "WOFF2",
+      "font_version_in_source_url": "v20",
+      "source_url": "https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fAZ9hiA.woff2",
+      "source_css_url": "https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap",
+      "license": "SIL Open Font License 1.1",
+      "license_asset": "assets/fonts/OFL-Inter.txt",
+      "license_source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt"
+    },
+    {
+      "path": "assets/fonts/inter-tight-latin-600.woff2",
+      "size_bytes": 22660,
+      "sha256": "db1a039d03ed646ef6a899f9ff92bf2f6fe382a49f1b0992066e85caf88b5be9",
+      "kind": "font",
+      "family": "Inter Tight",
+      "weight": 600,
+      "style": "normal",
+      "subset": "Latin",
+      "format": "WOFF2",
+      "font_version_in_source_url": "v9",
+      "source_url": "https://fonts.gstatic.com/s/intertight/v9/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2mj0QiaWy5S.woff2",
+      "source_css_url": "https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap",
+      "license": "SIL Open Font License 1.1",
+      "license_asset": "assets/fonts/OFL-Inter-Tight.txt",
+      "license_source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/intertight/OFL.txt"
+    },
+    {
+      "path": "assets/fonts/OFL-Inter.txt",
+      "size_bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "kind": "font_license",
+      "family": "Inter",
+      "license": "SIL Open Font License 1.1",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt"
+    },
+    {
+      "path": "assets/fonts/OFL-Inter-Tight.txt",
+      "size_bytes": 4383,
+      "sha256": "50240ab035cf1b6b3307940235481d515c4b6de3ab1fa843dbe59e7892cb9d58",
+      "kind": "font_license",
+      "family": "Inter Tight",
+      "license": "SIL Open Font License 1.1",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/intertight/OFL.txt"
+    }
+  ],
+  "presentation_recheck": {
+    "observed_on_utc": "2026-10-12",
+    "contact_url": "https://www.goocampusworld.com/contact-us",
+    "email": "info@goocampus.in",
+    "phone": "+91 80 4174 3956",
+    "address": "138/6, Ground Floor, 10th Main Road, 6th-A Cross, Sadashivanagar, RMV Extension, Bengaluru, Karnataka 560080, India",
+    "feature_sources": [
+      "https://www.goocampusworld.com/",
+      "https://www.goocampusworld.com/mentorship"
+    ],
+    "observations": [
+      "Main site exposes mentor search/matching and session booking, mentorship and courses/career pathway tools.",
+      "User confirms relevant existing audience; no traffic metrics or guaranteed eligibility/admission claims."
+    ]
+  },
+  "credibility_sources": {
+    "observed_on_utc": "2026-10-12",
+    "ownership_and_history": "User confirms all three websites are operated by GooCampus and the business has operated for more than a decade.",
+    "sites": [
+      {
+        "url": "https://goocampusuk.com/",
+        "observations": "Medical career guidance for the UK PLAB pathway; GooCampus company branding/contact."
+      },
+      {
+        "url": "https://goocampusaustralia.com/",
+        "observations": "Australia medical career consulting and AMC exam preparation; GooCampus branding/contact."
+      },
+      {
+        "url": "https://alscourse.com/",
+        "observations": "Advanced Life Support training in India; GooCampus company identity/contact."
+      }
+    ],
+    "excluded_claims": [
+      "India\u2019s only",
+      "India\u2019s first",
+      "ERC accreditation not independently verified for this task"
+    ],
+    "use": "Links and supported service summaries on partnership preview; approved decade-history sentence in five unscheduled drafts."
+  }
+}

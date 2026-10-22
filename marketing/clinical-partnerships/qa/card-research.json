@@ -1,0 +1,100 @@
+{
+  "purpose": "Internal card-field research from cached public programme data. Public cards should use fictional institutions, dates and fees and must not imply affiliation with the sources below.",
+  "scope": {
+    "extraction_files": 96,
+    "programme_records": 133,
+    "type_counts": {"observership": 91, "elective": 8, "fellowship": 18, "externship": 4},
+    "selected_examples": 8,
+    "spot_checked_examples": 6,
+    "taxonomy_note": "No exact attachment type appears in the extraction; the closest example is typed as an externship."
+  },
+  "card_fields": ["type/specialty", "duration and unit", "eligibility", "tuition or programme fee and billing unit", "separate application fee", "application window", "stipend/salary/funding", "official source"],
+  "programme_examples": [
+    {
+      "id": "obs_monthly_fee",
+      "type": "observership",
+      "duration": "Four-week visit",
+      "eligibility": "International medical graduates, residents and physicians; current medical students ineligible",
+      "fees": ["$50 USD per programme inquiry", "$3,000 for the month"],
+      "application_window": "For Jan-Jun 2027 placements, inquiries Oct 15-Dec 1, 2026; for Jul-Dec 2027, Jan 15-Mar 15, 2027",
+      "source_url": "https://www.kumc.edu/academic-and-student-affairs/departments/office-of-international-programs/inbound-programs/information-for-irsd-observers-and-visitors/international-observership-program.html"
+    },
+    {
+      "id": "obs_fee_on_request",
+      "type": "observership",
+      "duration": "1-2 weeks",
+      "eligibility": "Medical-school graduates; graduation less than five years before residency start; USMLE Step scores above the 50th percentile",
+      "fee_status": "on_request",
+      "fee": "Due after acceptance; amount not published",
+      "application_window": "April 1-May 10 each year",
+      "source_url": "https://education.hurleymc.com/gme/residencies-and-fellowships/combined-internal-medicine-pediatrics/observerships"
+    },
+    {
+      "id": "obs_expense_stipend",
+      "type": "observership",
+      "duration": "One month",
+      "eligibility": "One medical-school graduate not currently in a residency programme",
+      "programme_fee": null,
+      "stipend": "Up to $2,500 for housing, food and travel costs; expense support, not tuition",
+      "application_window": "Deadline Dec 1, 2026; selection notice by end of Jan 2027",
+      "source_url": "https://dlmp.uw.edu/education/global-observership"
+    },
+    {
+      "id": "elective_four_week_tuition",
+      "type": "elective",
+      "duration": "4 weeks per elective; up to three electives in different specialties",
+      "eligibility": "International medical students in final year or with core clerkships completed; graduates ineligible",
+      "fees": ["AY 2026-2027 tuition: $4,775 USD/4 weeks; $9,550 USD/8 weeks; $14,325 USD/12 weeks", "$200 USD non-refundable application processing fee, plus VSLO fees"],
+      "application_window": "VSLO opens in February and September; apply about 6 months ahead, with a 4-month cutoff",
+      "source_url": "https://medicine.yale.edu/md-program/visiting-students/international"
+    },
+    {
+      "id": "elective_two_or_four_week_tuition",
+      "type": "elective",
+      "duration": "2- or 4-week electives; 4-week minimum and 8-week maximum total",
+      "eligibility": "International medical students meeting clerkship and programme policies",
+      "fees": ["US$1,500/2-week elective; US$3,000/4-week elective", "US$300 non-refundable application processing fee"],
+      "application_window": "Apply at least 60 days before earliest requested elective; no placements June-August",
+      "source_urls": ["https://international.weill.cornell.edu/visiting-international-students/apply-our-program/student-eligibility-and-policies", "https://international.weill.cornell.edu/visiting-international-students"]
+    },
+    {
+      "id": "attachment_style_externship",
+      "type": "attachment-style; extraction type is externship",
+      "duration": "4 weeks",
+      "eligibility": "Medical students and graduates seeking US clinical experience",
+      "fees": ["$350 enrollment fee", "$2,000 for a 4-week rotation"],
+      "application_window": null,
+      "source_url": "https://projectimg.com/clinical-rotations"
+    },
+    {
+      "id": "fellowship_monthly_tuition",
+      "type": "fellowship",
+      "duration": "12 or 24 months",
+      "eligibility": "Completed equivalent primary residency; international trainees are self-funded and not employed by the host institution",
+      "tuition": "US $1,500/month; may be greatly reduced for trainees from low-income countries",
+      "application_window": "Same requirements/deadlines as ACGME fellowship; notice in December",
+      "source_url": "https://www.rmpds.org/node/70"
+    },
+    {
+      "id": "fellowship_fee_and_compensation_unspecified",
+      "type": "fellowship",
+      "duration": "One year; qualifying international graduates may complete up to four consecutive fellowships, subject to evaluation",
+      "fee": null,
+      "stipend_or_salary": null,
+      "source_url": "https://www.bumc.bu.edu/radiology/fellowships/abdominal-imaging-fellowship/why-were-unique"
+    }
+  ],
+  "spot_checked_examples": ["obs_monthly_fee", "obs_fee_on_request", "obs_expense_stipend", "elective_four_week_tuition", "attachment_style_externship", "fellowship_monthly_tuition"],
+  "fictional_sample_values": {
+    "observership": {"fictional": true, "duration": "4 weeks", "fee": "USD 1,450 per 4 weeks", "window": "Jan 15-Apr 30, 2027"},
+    "elective": {"fictional": true, "duration": "4 weeks", "tuition": "USD 4,250", "application_fee": "USD 175", "window": "Feb 1-Apr 30, 2027"},
+    "attachment": {"fictional": true, "duration": "4 weeks", "fee": "USD 2,100", "dates": "Jul 5-Aug 1, 2027"},
+    "fellowship_tuition_track": {"fictional": true, "duration": "12 months", "tuition": "USD 1,400/month", "stipend": null},
+    "fellowship_stipend_track": {"fictional": true, "duration": "12 months", "tuition": null, "stipend_display": "Paid fellowship; amount shared with offer", "stipend_amount": null},
+    "on_request_fee": {"fictional": true, "fee_status": "on_request", "display": "Fee shared after acceptance", "amount": null}
+  },
+  "summary": {
+    "patterns": ["Separate application/enrollment fees from tuition or programme fees.", "Keep the billing unit with each amount: per inquiry, rotation, block or month.", "Store stipends/salary under funding or compensation, not tuition; state the purpose when published.", "A fellowship label alone does not establish whether it charges tuition or pays a stipend."],
+    "comparability": "Amounts are not comparable across categories or billing periods. Preserve the source wording; set currency_code to null when a page shows only '$' and does not state the currency. Unknown values remain null."
+  }
+}

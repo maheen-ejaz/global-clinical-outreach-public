@@ -1,0 +1,33 @@
+{
+  "name": "global-clinical-outreach",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "uv run --frozen pytest -q",
+    "check:pr": "npm run check:infisical-profiles && npm run test:infisical-profiles && npm run test && npm run test:outreach && npm run test:typesafe && npm run test:typesafe-pilot",
+    "check:checkout": "node scripts/codex-worktree.mjs check",
+    "check:infisical-profiles": "node scripts/check-infisical-profiles.mjs",
+    "test:infisical-profiles": "node --test scripts/check-infisical-profiles.test.mjs scripts/codex-worktree.test.mjs",
+    "infisical:run": "node scripts/infisical-profile-runner.mjs run",
+    "infisical:preflight": "node scripts/infisical-profile-runner.mjs preflight",
+    "outreach:discover": "uv run --frozen outreach discover",
+    "outreach:scrape": "uv run --frozen outreach scrape",
+    "outreach:load": "uv run --frozen outreach load",
+    "outreach:emails": "uv run --frozen outreach emails",
+    "outreach:report": "uv run --frozen outreach report",
+    "outreach:email-domain": "uv run --frozen outreach email-domain",
+    "outreach:shortlist": "uv run --frozen outreach shortlist",
+    "outreach:publish": "uv run --frozen outreach publish",
+    "outreach:viewers": "uv run --frozen outreach viewers",
+    "outreach:activity": "uv run --frozen python -m pipeline.activity",
+    "test:outreach": "node --test tests/outreach-model.test.mjs tests/outreach-db.test.mjs",
+    "test:typesafe": "node --test tests/typesafe-smoke.test.mjs",
+    "test:design:ui": "node --test tests/design-ui.test.mjs",
+    "test:outreach:ui": "node --test tests/outreach-ui.test.mjs",
+    "test:typesafe-pilot": "node --test scripts/typesafe-pilot/test_offline.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.3.14",
+    "@playwright/test": "1.56.1"
+  }
+}

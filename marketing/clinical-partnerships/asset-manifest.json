@@ -1,0 +1,899 @@
+{
+  "schema_version": 1,
+  "observed_on_utc": "2026-10-12",
+  "assets": [
+    {
+      "path": "assets/images/goocampus-logo.png",
+      "size_bytes": 135729,
+      "sha256": "04654eb192c370f712b6fe467effce78acb72d8d83efb28979fcf6d7f0411e99",
+      "kind": "brand_logo",
+      "format": "PNG",
+      "dimensions_px": {
+        "width": 684,
+        "height": 684
+      },
+      "source_url": "https://www.goocampusworld.com/logo.png",
+      "source_page_url": "https://www.goocampusworld.com/",
+      "provenance": "Downloaded as served from the live GooCampus homepage logo path; retained in its original square dimensions and proportions.",
+      "alt_text": "GooCampus",
+      "rights": "GooCampus brand asset used for the company page authorized in GOO-1539; retain only for GooCampus integration."
+    },
+    {
+      "path": "assets/fonts/inter-latin-400.woff2",
+      "size_bytes": 23804,
+      "sha256": "48a0c2503a9c8ec4153302693fff56b3281aba5ce5afd7cf2bd51a03b098cd22",
+      "kind": "font",
+      "family": "Inter",
+      "weight": 400,
+      "style": "normal",
+      "subset": "Latin",
+      "format": "WOFF2",
+      "font_version_in_source_url": "v20",
+      "source_url": "https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2",
+      "source_css_url": "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap",
+      "license": "SIL Open Font License 1.1",
+      "license_asset": "assets/fonts/OFL-Inter.txt",
+      "license_source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt"
+    },
+    {
+      "path": "assets/fonts/inter-latin-500.woff2",
+      "size_bytes": 24272,
+      "sha256": "f3779f1efccc4bdcdf9c0a02ab95bf6bd092ed09c48c08cedc725889edd1d19f",
+      "kind": "font",
+      "family": "Inter",
+      "weight": 500,
+      "style": "normal",
+      "subset": "Latin",
+      "format": "WOFF2",
+      "font_version_in_source_url": "v20",
+      "source_url": "https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fAZ9hiA.woff2",
+      "source_css_url": "https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap",
+      "license": "SIL Open Font License 1.1",
+      "license_asset": "assets/fonts/OFL-Inter.txt",
+      "license_source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt"
+    },
+    {
+      "path": "assets/fonts/inter-tight-latin-600.woff2",
+      "size_bytes": 22660,
+      "sha256": "db1a039d03ed646ef6a899f9ff92bf2f6fe382a49f1b0992066e85caf88b5be9",
+      "kind": "font",
+      "family": "Inter Tight",
+      "weight": 600,
+      "style": "normal",
+      "subset": "Latin",
+      "format": "WOFF2",
+      "font_version_in_source_url": "v9",
+      "source_url": "https://fonts.gstatic.com/s/intertight/v9/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2mj0QiaWy5S.woff2",
+      "source_css_url": "https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap",
+      "license": "SIL Open Font License 1.1",
+      "license_asset": "assets/fonts/OFL-Inter-Tight.txt",
+      "license_source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/intertight/OFL.txt"
+    },
+    {
+      "path": "assets/fonts/OFL-Inter.txt",
+      "size_bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "kind": "font_license",
+      "family": "Inter",
+      "license": "SIL Open Font License 1.1",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt"
+    },
+    {
+      "path": "assets/fonts/OFL-Inter-Tight.txt",
+      "size_bytes": 4383,
+      "sha256": "50240ab035cf1b6b3307940235481d515c4b6de3ab1fa843dbe59e7892cb9d58",
+      "kind": "font_license",
+      "family": "Inter Tight",
+      "license": "SIL Open Font License 1.1",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/intertight/OFL.txt"
+    },
+    {
+      "path": "assets/images/clinical-conversation.svg",
+      "size_bytes": 1022,
+      "sha256": "77ebfe73653f91668f4729ad2ae44e73c75d29b87887912b46e21b82d7f91df9",
+      "kind": "original_graphic",
+      "source": "Created for GOO-1539",
+      "dimensions_px": {
+        "width": 320,
+        "height": 240
+      },
+      "alt_text": "",
+      "description": "Abstract open books and a conversation line; decorative beside equivalent visible process text.",
+      "crop": "No crop; same viewBox at all widths",
+      "rights": "Original project artwork; no third-party attribution"
+    },
+    {
+      "path": "assets/images/partnership-social.png",
+      "size_bytes": 37938,
+      "sha256": "6fafd7687ccf346a40da7ccf97d76659d1f8b71a8ecdc7379836040fafee6363",
+      "kind": "sharing_image",
+      "source": "qa/render-social.mjs using the bundled fonts and genuine company logo",
+      "dimensions_px": {
+        "width": 1200,
+        "height": 630
+      },
+      "alt_text": "GooCampusWorld \u2014 Clinical programme partnerships. Let\u2019s start with a conversation.",
+      "crop": "Full 1200 \u00d7 630 card; no crop",
+      "rights": "Original project composition; font licences and GooCampus brand restrictions apply"
+    },
+    {
+      "path": "assets/images/institutional/hero-640.webp",
+      "size_bytes": 23908,
+      "sha256": "608d6f18560a03ceb1a1090072145ac263e3b12b7474dd6bba77459786138235",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+      "original": "qa/institutional-imagery/originals/hero.png",
+      "prompt_set": "qa/institutional-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 640,
+        "height": 480
+      },
+      "alt_text": "An academic medical teaching wing with faculty in the middle distance.",
+      "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+      "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+      "export_quality": 72
+    },
+    {
+      "path": "assets/images/institutional/hero-960.webp",
+      "size_bytes": 46846,
+      "sha256": "fd0aca1b7d37c9e06572fde1c7146b1c7cf0bbeaee33e4a6c72a439d9c032d1f",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+      "original": "qa/institutional-imagery/originals/hero.png",
+      "prompt_set": "qa/institutional-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 960,
+        "height": 720
+      },
+      "alt_text": "An academic medical teaching wing with faculty in the middle distance.",
+      "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+      "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+      "export_quality": 72
+    },
+    {
+      "path": "assets/images/institutional/fellowship-480.webp",
+      "size_bytes": 19700,
+      "sha256": "165e091d832d5bf0003f8344daffeeb93ec90555f56dfad97136f577ba5feddd",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+      "original": "qa/institutional-imagery/originals/fellowship.png",
+      "prompt_set": "qa/institutional-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 480,
+        "height": 360
+      },
+      "alt_text": "A specialist teaching laboratory with microscopy workstations.",
+      "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+      "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+      "export_quality": 72
+    },
+    {
+      "path": "assets/images/institutional/fellowship-960.webp",
+      "size_bytes": 56758,
+      "sha256": "61fde06fe558eb052c09fb910b6ef9f144228f44ad6156afc160d110bab00d96",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+      "original": "qa/institutional-imagery/originals/fellowship.png",
+      "prompt_set": "qa/institutional-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 960,
+        "height": 720
+      },
+      "alt_text": "A specialist teaching laboratory with microscopy workstations.",
+      "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+      "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+      "export_quality": 72
+    },
+    {
+      "path": "assets/images/editorial/learning-640.webp",
+      "size_bytes": 22044,
+      "sha256": "361ee7a923fd77e016722e9ef9e2fde3a54fff8b7d0eb09726105cb367f4b21f",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; varied editorial subjects requested 2026-10-12",
+      "original": "qa/presentation-imagery/originals/learning.png",
+      "prompt_set": "qa/presentation-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 640,
+        "height": 480
+      },
+      "alt_text": "A physician mentor and a medical graduate discussing career goals.",
+      "rights": "Generated for this project; fictional people and generic settings; no actual provider or partnership depicted",
+      "crop": "Centred 4:3 export; course cards use centred 16:10 frame",
+      "export_quality": 72
+    },
+    {
+      "path": "assets/images/editorial/learning-960.webp",
+      "size_bytes": 36874,
+      "sha256": "db63df114c7328051fa2ba6e8410dcd4c4a54aa33da69ae4744f68a7af4888d5",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; varied editorial subjects requested 2026-10-12",
+      "original": "qa/presentation-imagery/originals/learning.png",
+      "prompt_set": "qa/presentation-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 960,
+        "height": 720
+      },
+      "alt_text": "A physician mentor and a medical graduate discussing career goals.",
+      "rights": "Generated for this project; fictional people and generic settings; no actual provider or partnership depicted",
+      "crop": "Centred 4:3 export; course cards use centred 16:10 frame",
+      "export_quality": 72
+    },
+    {
+      "path": "assets/images/editorial/observership-480.webp",
+      "size_bytes": 12564,
+      "sha256": "c02a8cc4324f90dbd927dce73604f7d5d8352e85899a593844ea34b857c04de8",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; varied editorial subjects requested 2026-10-12",
+      "original": "qa/presentation-imagery/originals/observership.png",
+      "prompt_set": "qa/presentation-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 480,
+        "height": 360
+      },
+      "alt_text": "A doctor explaining a teaching diagram to two medical observers.",
+      "rights": "Generated for this project; fictional people and generic settings; no actual provider or partnership depicted",
+      "crop": "Centred 4:3 export; course cards use centred 16:10 frame",
+      "export_quality": 72
+    },
+    {
+      "path": "assets/images/editorial/observership-960.webp",
+      "size_bytes": 29498,
+      "sha256": "e4275e1664a9184cd1a15f01ce3ec5448582e1c2a92b720d00ce4294100949db",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; varied editorial subjects requested 2026-10-12",
+      "original": "qa/presentation-imagery/originals/observership.png",
+      "prompt_set": "qa/presentation-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 960,
+        "height": 720
+      },
+      "alt_text": "A doctor explaining a teaching diagram to two medical observers.",
+      "rights": "Generated for this project; fictional people and generic settings; no actual provider or partnership depicted",
+      "crop": "Centred 4:3 export; course cards use centred 16:10 frame",
+      "export_quality": 72
+    },
+    {
+      "path": "assets/images/editorial/elective-480.webp",
+      "size_bytes": 13426,
+      "sha256": "71c076c9bf92e0118a4c3c466b6c06a53c7049d143a5718846aef37807202b49",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; varied editorial subjects requested 2026-10-12",
+      "original": "qa/presentation-imagery/originals/elective.png",
+      "prompt_set": "qa/presentation-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 480,
+        "height": 360
+      },
+      "alt_text": "An instructor and medical student practising with a simulation mannequin.",
+      "rights": "Generated for this project; fictional people and generic settings; no actual provider or partnership depicted",
+      "crop": "Centred 4:3 export; course cards use centred 16:10 frame",
+      "export_quality": 72
+    },
+    {
+      "path": "assets/images/editorial/elective-960.webp",
+      "size_bytes": 30168,
+      "sha256": "39fcfdd8673a67675faf9726c928f15c0754cc35556e0aae6b5cf5c9ba7fe980",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; varied editorial subjects requested 2026-10-12",
+      "original": "qa/presentation-imagery/originals/elective.png",
+      "prompt_set": "qa/presentation-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 960,
+        "height": 720
+      },
+      "alt_text": "An instructor and medical student practising with a simulation mannequin.",
+      "rights": "Generated for this project; fictional people and generic settings; no actual provider or partnership depicted",
+      "crop": "Centred 4:3 export; course cards use centred 16:10 frame",
+      "export_quality": 72
+    },
+    {
+      "path": "assets/images/editorial/attachment-480.webp",
+      "size_bytes": 18070,
+      "sha256": "2537addb40375d35321a225ed0ddc986f1072a29409deea6d0eb1aaa4c4befaf",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; varied editorial subjects requested 2026-10-12",
+      "original": "qa/presentation-imagery/originals/attachment.png",
+      "prompt_set": "qa/presentation-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 480,
+        "height": 360
+      },
+      "alt_text": "A notebook, stethoscope and tablet arranged on a clinical learning desk.",
+      "rights": "Generated for this project; fictional people and generic settings; no actual provider or partnership depicted",
+      "crop": "Centred 4:3 export; course cards use centred 16:10 frame",
+      "export_quality": 72
+    },
+    {
+      "path": "assets/images/editorial/attachment-960.webp",
+      "size_bytes": 69124,
+      "sha256": "add1e504ecc85efb29bfb199ecf3f9c933f0ead32f90912135654cf3810991ad",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; varied editorial subjects requested 2026-10-12",
+      "original": "qa/presentation-imagery/originals/attachment.png",
+      "prompt_set": "qa/presentation-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 960,
+        "height": 720
+      },
+      "alt_text": "A notebook, stethoscope and tablet arranged on a clinical learning desk.",
+      "rights": "Generated for this project; fictional people and generic settings; no actual provider or partnership depicted",
+      "crop": "Centred 4:3 export; course cards use centred 16:10 frame",
+      "export_quality": 72
+    }
+  ],
+  "design_references": [
+    {
+      "path": "vendor/attio-mono-design-system.zip",
+      "sha256": "19a2dbbe2f4935bcfe3736d94e8bd29afe5e70fb50619483a5be482e20b965e6",
+      "size_bytes": 13617
+    },
+    {
+      "path": "vendor/attio-mono-v2/README.md",
+      "sha256": "7ee324181321b0e6b9ebeab41981b8e90d12907e2dc21abcff5266447f8bd451",
+      "size_bytes": 9816
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Button/README.md",
+      "sha256": "2a623d3c4b4b50cbbc2ffbba3031b6e834070576f5f838b6a3b8a5bae8a5b74b",
+      "size_bytes": 1432
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Button/preview.html",
+      "sha256": "f18e0844a4144e1b8cd25492c2f38f6f5d89d2bfa339a7effb050e935fce6dd9",
+      "size_bytes": 4940
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Card/README.md",
+      "sha256": "34985d9fe175d17f79232f3d0ca3145040078badf85fc86019cb5f931b624d71",
+      "size_bytes": 595
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Card/preview.html",
+      "sha256": "91ae11b7edd05718105fc18dbdd45f1da8493ee572489aef6597c21914f59f8a",
+      "size_bytes": 2158
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Citation/README.md",
+      "sha256": "22b3509d3c6c5d63ec613290dc99c8d6a23352483f29ef17027a353d8db37ed5",
+      "size_bytes": 464
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Citation/preview.html",
+      "sha256": "733eb4b4738af64eee449049f86f74b67e20a165f36eee3a8b7d03352243b828",
+      "size_bytes": 886
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Floating/README.md",
+      "sha256": "e4d8f535be66356597cf435429b8e9f5a2668d375329b954f84318d4c969e50a",
+      "size_bytes": 701
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Floating/preview.html",
+      "sha256": "e50c248a484038121792a4cecdc3f2b00324cbb08a4866ffe4e3cd8b0b9a2958",
+      "size_bytes": 2716
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Input/README.md",
+      "sha256": "38448ea6523b091510ac5bc99d5f8297126a322667982d4df1a3a7b8c4f4615a",
+      "size_bytes": 1227
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Input/preview.html",
+      "sha256": "5f783f6226a4eb5ff9c8e19675f6064d2ab40bfc5c4d0d3dae48fee59956286f",
+      "size_bytes": 3339
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Layout/README.md",
+      "sha256": "20d5b47b5be185129511fecea5a82d86c6681ed6d5f5afce3298b1f7b0dbb531",
+      "size_bytes": 1175
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Layout/preview.html",
+      "sha256": "1eee22b4a0c9f5d155ab72dfa02475c9c6dd35a77e1f047983957831878879f7",
+      "size_bytes": 3005
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Reading/README.md",
+      "sha256": "f40a5f2ffa61d4a75663df633cbc7b9cedf37c76f6172db6876ac384ffa1df5c",
+      "size_bytes": 658
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/Reading/preview.html",
+      "sha256": "50119e2941205e13feffb2bcbcfcc2523bc05ca39156569ad0483e068786ded8",
+      "size_bytes": 2662
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/StatusChip/README.md",
+      "sha256": "95dd0a01e402b4a0c62a5ed3907c9260ad48828a744f72933342d94c9c116c2c",
+      "size_bytes": 492
+    },
+    {
+      "path": "vendor/attio-mono-v2/components/StatusChip/preview.html",
+      "sha256": "4e6ffa6e12de27913024eae4bc57b6896235be5d567560221f4745be53616b0e",
+      "size_bytes": 1141
+    },
+    {
+      "path": "vendor/attio-mono-v2/cover.html",
+      "sha256": "7d77ff637ba3ee6c519069ca13d59f6bb089929bf0e9a76dbf481253c17ff521",
+      "size_bytes": 2278
+    },
+    {
+      "path": "vendor/attio-mono-v2/preview.html",
+      "sha256": "282fe807c41f47db4a7b6803d3c426bf80a66970c751b2edc0c6d4e689bb38e9",
+      "size_bytes": 9252
+    },
+    {
+      "path": "vendor/attio-mono-v2/tokens.css",
+      "sha256": "f93e4d65936eb6c3ee892a199d76fcbf9c7ff059ac4ee8a1e58c11c7b907caca",
+      "size_bytes": 10666
+    },
+    {
+      "path": "vendor/attio-mono-v2/tokens.json",
+      "sha256": "e50b7569197ab58f3f39879eb493eae69826e675c64ef36ecd0e0c244cff76f0",
+      "size_bytes": 14451
+    },
+    {
+      "path": "vendor/attio-mono/README.md",
+      "sha256": "bd975ad1405790089381ce24b9a720d1ab83622b669f7e155e58fc38ac38bac8",
+      "size_bytes": 6009
+    },
+    {
+      "path": "vendor/attio-mono/components/Button/README.md",
+      "sha256": "43eaa1f967d619f04d5d4228773a4b022efd277793cb7a5a319143c038c62dde",
+      "size_bytes": 704
+    },
+    {
+      "path": "vendor/attio-mono/components/Button/preview.html",
+      "sha256": "5de89bd7857ba2ab6166e131fa30f5c5b1a3fa46f49b8162ff83830847d11f1c",
+      "size_bytes": 1657
+    },
+    {
+      "path": "vendor/attio-mono/components/Card/README.md",
+      "sha256": "34985d9fe175d17f79232f3d0ca3145040078badf85fc86019cb5f931b624d71",
+      "size_bytes": 595
+    },
+    {
+      "path": "vendor/attio-mono/components/Card/preview.html",
+      "sha256": "91ae11b7edd05718105fc18dbdd45f1da8493ee572489aef6597c21914f59f8a",
+      "size_bytes": 2158
+    },
+    {
+      "path": "vendor/attio-mono/components/Citation/README.md",
+      "sha256": "22b3509d3c6c5d63ec613290dc99c8d6a23352483f29ef17027a353d8db37ed5",
+      "size_bytes": 464
+    },
+    {
+      "path": "vendor/attio-mono/components/Citation/preview.html",
+      "sha256": "733eb4b4738af64eee449049f86f74b67e20a165f36eee3a8b7d03352243b828",
+      "size_bytes": 886
+    },
+    {
+      "path": "vendor/attio-mono/components/StatusChip/README.md",
+      "sha256": "95dd0a01e402b4a0c62a5ed3907c9260ad48828a744f72933342d94c9c116c2c",
+      "size_bytes": 492
+    },
+    {
+      "path": "vendor/attio-mono/components/StatusChip/preview.html",
+      "sha256": "4e6ffa6e12de27913024eae4bc57b6896235be5d567560221f4745be53616b0e",
+      "size_bytes": 1141
+    },
+    {
+      "path": "vendor/attio-mono/cover.html",
+      "sha256": "aebd54cb848817f2b221b2efc0d410a0c2da0b8a0ccb0b4097f1d16195a725c2",
+      "size_bytes": 2275
+    },
+    {
+      "path": "vendor/attio-mono/tokens.css",
+      "sha256": "ff08c0271b345f96dfb363f118d7eb8a36d3c16a01cc2378ec90bd98268b975d",
+      "size_bytes": 4390
+    },
+    {
+      "path": "vendor/attio-mono/tokens.json",
+      "sha256": "fd240bf645f9d5774f4c667e424b354dbf9839d67236f2753dc7389658135dcf",
+      "size_bytes": 10768
+    }
+  ],
+  "hero_choice": {
+    "selected": "Exact approved Option 2: Institutional architecture exemplar",
+    "source": "qa/image-style-review/originals/architecture.png",
+    "current_original": "qa/institutional-imagery/originals/hero.png",
+    "public_label": "No per-image caption; source provenance retained in QA",
+    "mode": "built-in imagegen"
+  },
+  "factual_sources": [
+    {
+      "url": "https://linear.app/goocampus/issue/GOO-1539/build-and-preview-the-clinical-partnership-marketing-page-in-attio",
+      "claims": [
+        "Existing offerings are live",
+        "Additional clinical collection planned",
+        "maheenejaz@goocampus.in is the partnership contact",
+        "Individual routing, responsibilities and private commercial discussions"
+      ]
+    },
+    {
+      "url": "https://www.goocampusworld.com/",
+      "claims": [
+        "Mentorship and medical career programme context",
+        "Genuine logo and current website navigation"
+      ]
+    },
+    {
+      "url": "https://www.goocampusworld.com/contact-us",
+      "claims": [
+        "Company identity and existing general partnership invitation"
+      ]
+    }
+  ],
+  "carousel_images": {
+    "direction": "Editorial clinical teaching, simulation, still life and retained pathology laboratory",
+    "prompt_set": "qa/presentation-imagery/prompts.json",
+    "retained_fellowship_provenance": "qa/institutional-imagery/prompts.json",
+    "public_label": "Example badges and fictional-data/illustrative-image disclaimer"
+  },
+  "marketing_iconography": {
+    "source": "Original page-local SVG symbols in index.html",
+    "grid_px": 16,
+    "stroke_px": 1.5,
+    "colour_role": "muted",
+    "semantics": "Decorative, aria-hidden, focusable=false"
+  },
+  "archived_assets": [
+    {
+      "path": "qa/superseded-images/programmes/observership-480.webp",
+      "size_bytes": 15274,
+      "sha256": "591fd009306c300fe2328f5a3b644421c7af9c650b0df520d2edc5ad2a88be58",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; original and prompt preserved in qa/",
+      "dimensions_px": {
+        "width": 480,
+        "height": 300
+      },
+      "rights": "AI-generated for this project; no real institution or partnership depicted",
+      "crop": "Generated composition retained in export; 16:10 CSS card frame, centred crop",
+      "superseded_public_path": "assets/images/programmes/observership-480.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/programmes/observership-960.webp",
+      "size_bytes": 36756,
+      "sha256": "344818cda53228246b9b739929a3c0d8cfb303a334cc5aec1ef73ff467fc75ef",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; original and prompt preserved in qa/",
+      "dimensions_px": {
+        "width": 960,
+        "height": 600
+      },
+      "rights": "AI-generated for this project; no real institution or partnership depicted",
+      "crop": "Generated composition retained in export; 16:10 CSS card frame, centred crop",
+      "superseded_public_path": "assets/images/programmes/observership-960.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/programmes/elective-480.webp",
+      "size_bytes": 14692,
+      "sha256": "3bc25462912653e504965a86f39170b61ac8c2982b2fba8874b0383f03736bb7",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; original and prompt preserved in qa/",
+      "dimensions_px": {
+        "width": 480,
+        "height": 300
+      },
+      "rights": "AI-generated for this project; no real institution or partnership depicted",
+      "crop": "Generated composition retained in export; 16:10 CSS card frame, centred crop",
+      "superseded_public_path": "assets/images/programmes/elective-480.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/programmes/elective-960.webp",
+      "size_bytes": 33700,
+      "sha256": "225a695dbb1251c1ddb26ab894dd8cbf5385ef6b400aebee5ea2aab4ea372bf0",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; original and prompt preserved in qa/",
+      "dimensions_px": {
+        "width": 960,
+        "height": 600
+      },
+      "rights": "AI-generated for this project; no real institution or partnership depicted",
+      "crop": "Generated composition retained in export; 16:10 CSS card frame, centred crop",
+      "superseded_public_path": "assets/images/programmes/elective-960.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/programmes/attachment-480.webp",
+      "size_bytes": 13684,
+      "sha256": "f4548c33212560892d30511d9fdc9a6f08c250415e605cc98e76709e56fb286a",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; original and prompt preserved in qa/",
+      "dimensions_px": {
+        "width": 480,
+        "height": 300
+      },
+      "rights": "AI-generated for this project; no real institution or partnership depicted",
+      "crop": "Generated composition retained in export; 16:10 CSS card frame, centred crop",
+      "superseded_public_path": "assets/images/programmes/attachment-480.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/programmes/attachment-960.webp",
+      "size_bytes": 33436,
+      "sha256": "6eb4359bdfd8d891eb43284c18ed2840e4301c72832ab89231bcc8bed3616c80",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; original and prompt preserved in qa/",
+      "dimensions_px": {
+        "width": 960,
+        "height": 600
+      },
+      "rights": "AI-generated for this project; no real institution or partnership depicted",
+      "crop": "Generated composition retained in export; 16:10 CSS card frame, centred crop",
+      "superseded_public_path": "assets/images/programmes/attachment-960.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/programmes/fellowship-480.webp",
+      "size_bytes": 15558,
+      "sha256": "e4f9f31515ceb1c58b59617f44e94c0b8a64c6c23a26d24549a9e004e7d612fa",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; original and prompt preserved in qa/",
+      "dimensions_px": {
+        "width": 480,
+        "height": 300
+      },
+      "rights": "AI-generated for this project; no real institution or partnership depicted",
+      "crop": "Generated composition retained in export; 16:10 CSS card frame, centred crop",
+      "superseded_public_path": "assets/images/programmes/fellowship-480.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/programmes/fellowship-960.webp",
+      "size_bytes": 36204,
+      "sha256": "19247918e8ba833e5fef223f97646bb8a475a26a587f43bf7b90fcd9e9c951ad",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; original and prompt preserved in qa/",
+      "dimensions_px": {
+        "width": 960,
+        "height": 600
+      },
+      "rights": "AI-generated for this project; no real institution or partnership depicted",
+      "crop": "Generated composition retained in export; 16:10 CSS card frame, centred crop",
+      "superseded_public_path": "assets/images/programmes/fellowship-960.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/marketing/partnership-conversation-640.webp",
+      "size_bytes": 19840,
+      "sha256": "c329f4ea95e4d19206b474fa00430a861be0d5f9b29019de35f1c149b75db9c7",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; prompts in qa/marketing-image-prompts.json; originals in qa/marketing-generated/",
+      "dimensions_px": {
+        "width": 640,
+        "height": 480
+      },
+      "rights": "AI-generated for this project; fictional generic setting, no institution or partnership depicted",
+      "crop": "Original 4:3 composition retained in exports",
+      "superseded_public_path": "assets/images/marketing/partnership-conversation-640.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/marketing/partnership-conversation-960.webp",
+      "size_bytes": 33352,
+      "sha256": "1c36c26c6a61f0cd490333a176a05ff6ef2eb8ce2942917844f64cfdbf2b812d",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; prompts in qa/marketing-image-prompts.json; originals in qa/marketing-generated/",
+      "dimensions_px": {
+        "width": 960,
+        "height": 720
+      },
+      "rights": "AI-generated for this project; fictional generic setting, no institution or partnership depicted",
+      "crop": "Original 4:3 composition retained in exports",
+      "superseded_public_path": "assets/images/marketing/partnership-conversation-960.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/marketing/clinical-learning-640.webp",
+      "size_bytes": 23732,
+      "sha256": "3c1f4e717271cbf2464233db3a87f6a504f298a9960e53865d5b321d4b0c1bd6",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; prompts in qa/marketing-image-prompts.json; originals in qa/marketing-generated/",
+      "dimensions_px": {
+        "width": 640,
+        "height": 480
+      },
+      "rights": "AI-generated for this project; fictional generic setting, no institution or partnership depicted",
+      "crop": "Original 4:3 composition retained in exports",
+      "superseded_public_path": "assets/images/marketing/clinical-learning-640.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/marketing/clinical-learning-960.webp",
+      "size_bytes": 41558,
+      "sha256": "a61491ef3b7cf215fbe52f02ee21293a04f3927305eabd033b9b4269b13cf58e",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; prompts in qa/marketing-image-prompts.json; originals in qa/marketing-generated/",
+      "dimensions_px": {
+        "width": 960,
+        "height": 720
+      },
+      "rights": "AI-generated for this project; fictional generic setting, no institution or partnership depicted",
+      "crop": "Original 4:3 composition retained in exports",
+      "superseded_public_path": "assets/images/marketing/clinical-learning-960.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/institutional/learning-640.webp",
+      "size_bytes": 37440,
+      "sha256": "842f64e2f99281a466db9b3896d329219d7c4383421435e359dd8048bb35829f",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+      "original": "qa/institutional-imagery/originals/learning.png",
+      "prompt_set": "qa/institutional-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 640,
+        "height": 480
+      },
+      "alt_text": "AI-generated architectural image of an academic medical learning atrium with faculty in the middle distance.",
+      "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+      "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+      "export_quality": 72,
+      "superseded_public_path": "assets/images/institutional/learning-640.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/institutional/learning-960.webp",
+      "size_bytes": 74004,
+      "sha256": "d19b8ceabe6ce078ae233900c4284674d98b56e403f5b92c0ad4e329772d5e54",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+      "original": "qa/institutional-imagery/originals/learning.png",
+      "prompt_set": "qa/institutional-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 960,
+        "height": 720
+      },
+      "alt_text": "AI-generated architectural image of an academic medical learning atrium with faculty in the middle distance.",
+      "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+      "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+      "export_quality": 72,
+      "superseded_public_path": "assets/images/institutional/learning-960.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/institutional/observership-480.webp",
+      "size_bytes": 14948,
+      "sha256": "80dead63a8c14d2d97ce2b3417c9a049d1ebc1a5e7f62d1589553f83cb1c8e34",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+      "original": "qa/institutional-imagery/originals/observership.png",
+      "prompt_set": "qa/institutional-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 480,
+        "height": 360
+      },
+      "alt_text": "AI-generated architectural image of a clinical teaching corridor with a small faculty group in the middle distance.",
+      "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+      "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+      "export_quality": 72,
+      "superseded_public_path": "assets/images/institutional/observership-480.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/institutional/observership-960.webp",
+      "size_bytes": 43432,
+      "sha256": "44e370b6c35a57d5c7d4170b9e182a4f16fa3a866b63367c1e0bead49429db82",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+      "original": "qa/institutional-imagery/originals/observership.png",
+      "prompt_set": "qa/institutional-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 960,
+        "height": 720
+      },
+      "alt_text": "AI-generated architectural image of a clinical teaching corridor with a small faculty group in the middle distance.",
+      "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+      "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+      "export_quality": 72,
+      "superseded_public_path": "assets/images/institutional/observership-960.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/institutional/elective-480.webp",
+      "size_bytes": 19534,
+      "sha256": "5299ff5ceadffe19c4a5119f4600087d8e10aa596f5cc9db8ea5aad95757245d",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+      "original": "qa/institutional-imagery/originals/elective.png",
+      "prompt_set": "qa/institutional-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 480,
+        "height": 360
+      },
+      "alt_text": "AI-generated architectural image of a modern clinical skills teaching centre with faculty in the middle distance.",
+      "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+      "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+      "export_quality": 72,
+      "superseded_public_path": "assets/images/institutional/elective-480.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/institutional/elective-960.webp",
+      "size_bytes": 54926,
+      "sha256": "3cad4a60959d527d2429447463f4f93a1cdfd40614c5fd608f8b89567383f216",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+      "original": "qa/institutional-imagery/originals/elective.png",
+      "prompt_set": "qa/institutional-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 960,
+        "height": 720
+      },
+      "alt_text": "AI-generated architectural image of a modern clinical skills teaching centre with faculty in the middle distance.",
+      "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+      "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+      "export_quality": 72,
+      "superseded_public_path": "assets/images/institutional/elective-960.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/institutional/attachment-480.webp",
+      "size_bytes": 15916,
+      "sha256": "e71f3b45ad93447ddeddbdfd8beea3eaa5061b440960029d34a5952a5202ceca",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+      "original": "qa/institutional-imagery/originals/attachment.png",
+      "prompt_set": "qa/institutional-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 480,
+        "height": 360
+      },
+      "alt_text": "AI-generated architectural image of a clinical department briefing suite in a generic academic medical centre.",
+      "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+      "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+      "export_quality": 72,
+      "superseded_public_path": "assets/images/institutional/attachment-480.webp",
+      "deployment": "excluded; archived in QA"
+    },
+    {
+      "path": "qa/superseded-images/institutional/attachment-960.webp",
+      "size_bytes": 49100,
+      "sha256": "ec1937a11c000bf97be84a7e6905e22a26cc5a2024362cbf410f17c89013d8d7",
+      "kind": "ai_generated_illustrative_image",
+      "source": "Built-in imagegen; user selected Option 2: Institutional architecture",
+      "original": "qa/institutional-imagery/originals/attachment.png",
+      "prompt_set": "qa/institutional-imagery/prompts.json",
+      "dimensions_px": {
+        "width": 960,
+        "height": 720
+      },
+      "alt_text": "AI-generated architectural image of a clinical department briefing suite in a generic academic medical centre.",
+      "rights": "AI-generated for this project; fictional institution/settings, no provider relationship depicted",
+      "crop": "Original 4:3 composition retained in export; centred 16:10 crop in programme cards",
+      "export_quality": 72,
+      "superseded_public_path": "assets/images/institutional/attachment-960.webp",
+      "deployment": "excluded; archived in QA"
+    }
+  ],
+  "superseded_imagery_provenance": {
+    "hero_choice": {
+      "selected": "New AI-generated editorial partnership-conversation image requested by Maheen",
+      "original_svg": "assets/images/clinical-conversation.svg retained unchanged for reuse",
+      "public_label": "Illustrative AI-generated image",
+      "prompt_set": "qa/marketing-image-prompts.json",
+      "mode": "built-in imagegen"
+    },
+    "carousel_images": {
+      "generated_mode": "built-in imagegen",
+      "prompts": "qa/image-prompts.json",
+      "originals": "qa/generated-art/",
+      "public_label": "Illustrative examples; AI-generated imagery"
+    }
+  },
+  "presentation_revision": {
+    "date": "2026-10-12",
+    "contact": "info@goocampus.in",
+    "contact_source": "https://www.goocampusworld.com/contact-us",
+    "visible_ai_captions": "Removed at user request; provenance stays in manifests and original files",
+    "retained_images": [
+      "hero",
+      "fellowship"
+    ]
+  }
+}

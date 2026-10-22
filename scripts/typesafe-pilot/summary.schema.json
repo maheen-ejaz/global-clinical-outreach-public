@@ -1,0 +1,297 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Synthetic TypeSafe pilot run summary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocol_id",
+    "model",
+    "started_at",
+    "finished_at",
+    "total_runtime_ms",
+    "planned_api_attempts",
+    "attempt_intents_recorded",
+    "requests_skipped_as_previously_attempted",
+    "successful_responses",
+    "failed_attempts",
+    "failed_attempt_codes",
+    "not_checked_controls_no_call",
+    "no_candidate_manual_review",
+    "usage_tokens",
+    "usage_cost_estimate_usd",
+    "cost_basis",
+    "price_snapshot",
+    "cost_estimate_complete",
+    "unresolved_attempt_ids",
+    "client_request_ms",
+    "provider_model_time_ms",
+    "provider_model_time_note",
+    "human_review_time_saving_percent",
+    "integration_roi_claim",
+    "no_app_update",
+    "run_metadata"
+  ],
+  "properties": {
+    "protocol_id": {
+      "const": "gco-window-status-synthetic-v2"
+    },
+    "model": {
+      "const": "jev-1.13.0"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "finished_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "total_runtime_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "planned_api_attempts": {
+      "const": 40
+    },
+    "attempt_intents_recorded": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 40
+    },
+    "requests_skipped_as_previously_attempted": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 40
+    },
+    "successful_responses": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 40
+    },
+    "failed_attempts": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 40
+    },
+    "failed_attempt_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "not_checked_controls_no_call": {
+      "const": 8
+    },
+    "no_candidate_manual_review": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 40
+    },
+    "usage_tokens": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input_tokens",
+        "output_tokens"
+      ],
+      "properties": {
+        "input_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "output_tokens": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "usage_cost_estimate_usd": {
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "cost_basis": {
+      "type": "string"
+    },
+    "price_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_url",
+        "retrieved_at",
+        "input_usd_per_million_tokens",
+        "output_usd_per_million_tokens",
+        "maximum_run_usd"
+      ],
+      "properties": {
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "retrieved_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "input_usd_per_million_tokens": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "output_usd_per_million_tokens": {
+          "type": "number",
+          "minimum": 0
+        },
+        "maximum_run_usd": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.1
+        }
+      }
+    },
+    "cost_estimate_complete": {
+      "type": "boolean"
+    },
+    "unresolved_attempt_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "client_request_ms": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "p50",
+        "p95",
+        "maximum"
+      ],
+      "properties": {
+        "p50": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "p95": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "maximum": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+    "provider_model_time_ms": {
+      "type": "null"
+    },
+    "provider_model_time_note": {
+      "type": "string"
+    },
+    "human_review_time_saving_percent": {
+      "type": "null"
+    },
+    "integration_roi_claim": {
+      "const": false
+    },
+    "no_app_update": {
+      "const": true
+    },
+    "run_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "protocol_id",
+        "protocol_revision",
+        "model",
+        "protocol_sha256",
+        "stimuli_sha256",
+        "gold_sha256",
+        "agent_baseline_sha256",
+        "price_config_sha256",
+        "permutation_plan_sha256",
+        "maximum_api_attempts_including_failures",
+        "maximum_request_input_tokens",
+        "maximum_request_body_bytes",
+        "maximum_run_usd",
+        "worst_case_input_cost_usd",
+        "created_at"
+      ],
+      "properties": {
+        "version": {
+          "const": 1
+        },
+        "protocol_id": {
+          "const": "gco-window-status-synthetic-v2"
+        },
+        "protocol_revision": {
+          "const": 2
+        },
+        "model": {
+          "const": "jev-1.13.0"
+        },
+        "protocol_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "stimuli_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "gold_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "agent_baseline_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "price_config_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "permutation_plan_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "maximum_api_attempts_including_failures": {
+          "const": 40
+        },
+        "maximum_request_input_tokens": {
+          "const": 32000
+        },
+        "maximum_request_body_bytes": {
+          "const": 32000
+        },
+        "maximum_run_usd": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.1
+        },
+        "worst_case_input_cost_usd": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

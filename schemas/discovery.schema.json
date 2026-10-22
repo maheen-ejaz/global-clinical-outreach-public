@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Discovered providers",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "website",
+      "country",
+      "provider_type",
+      "discovery_source",
+      "source_kind",
+      "screen"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "website": {
+        "type": "string",
+        "pattern": "^https?://"
+      },
+      "country": {
+        "type": "string",
+        "pattern": "^[A-Z]{2}$",
+        "description": "ISO 3166-1 alpha-2, e.g. US, GB, AU, NZ"
+      },
+      "provider_type": {
+        "enum": [
+          "academic",
+          "community",
+          "placement_company",
+          "fellowship"
+        ]
+      },
+      "discovery_source": {
+        "type": "string",
+        "pattern": "^https?://"
+      },
+      "source_kind": {
+        "enum": [
+          "img_directory",
+          "high_img_hospital",
+          "placement_partner_list",
+          "country_registry",
+          "web_search",
+          "referral"
+        ],
+        "description": "Where the lead came from, so reports can compare yield per source. Prefer curated IMG sources over general web search."
+      },
+      "screen": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "One-page check made before any scraping. `outreach scrape` reads a provider only when program_open, outreach_allowed and in_country are true and refuses_imgs is not true.",
+        "required": [
+          "accepts_imgs",
+          "program_open",
+          "outreach_allowed",
+          "in_country",
+          "evidence_url",
+          "checked_on"
+        ],
+        "properties": {
+          "accepts_imgs": {
+            "type": "boolean",
+            "description": "The page states the program is open to international students or graduates. Recorded for ranking; false (silent) does not fail the screen"
+          },
+          "refuses_imgs": {
+            "type": "boolean",
+            "description": "The page says the program does not take international students or graduates. Fails the screen"
+          },
+          "program_open": {
+            "type": "boolean",
+            "description": "Applications are currently accepted (not suspended, paused or partner-schools only)"
+          },
+          "outreach_allowed": {
+            "type": "boolean",
+            "description": "The site does not forbid unsolicited contact or third-party agencies"
+          },
+          "in_country": {
+            "type": "boolean",
+            "description": "The provider operates in the batch's country"
+          },
+          "evidence_url": {
+            "type": "string",
+            "pattern": "^https?://",
+            "description": "The page the four answers were judged from"
+          },
+          "checked_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "note": {
+            "type": "string",
+            "description": "Why a check failed, or anything the extractor should know"
+          },
+          "contactable": {
+            "type": "boolean",
+            "description": "Optional, never gating: the program or staff page names a coordinator or director (with or without an email). Used by targeting profiles."
+          }
+        }
+      }
+    }
+  }
+}

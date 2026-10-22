@@ -1,0 +1,16 @@
+{
+  "url": "https://partners-preview.goocampusglobal.com/",
+  "checked_at": "2026-10-09T11:27:34.594Z",
+  "browser": "156.0.8078.4",
+  "viewports": [
+    390,
+    1440
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "console_errors": [],
+  "https_errors_ignored": false,
+  "dns_test_override": "Exact custom hostname mapped to 52.74.6.109 as returned by authoritative and public DNS, because local resolver retains earlier NXDOMAIN"
+}

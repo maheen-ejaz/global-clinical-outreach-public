@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-09T15:05:03.388Z",
+  "method": "Exact public-DNS IP map in this test browser only; normal TLS validation; no machine settings changed",
+  "cases": [
+    {
+      "theme": "light",
+      "width": 390,
+      "url": "https://partners-preview.goocampusglobal.com/",
+      "errors": [],
+      "nativeTLS": true,
+      "publicDNSIP": "52.74.6.109"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "url": "https://partners-preview.goocampusglobal.com/",
+      "errors": [],
+      "nativeTLS": true,
+      "publicDNSIP": "52.74.6.109"
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "url": "https://partners-preview.goocampusglobal.com/",
+      "errors": [],
+      "nativeTLS": true,
+      "publicDNSIP": "52.74.6.109"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "url": "https://partners-preview.goocampusglobal.com/",
+      "errors": [],
+      "nativeTLS": true,
+      "publicDNSIP": "52.74.6.109"
+    }
+  ]
+}

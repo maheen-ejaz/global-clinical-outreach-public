@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "checked_at",
+    "source",
+    "counts"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "checked_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "const": "Gmail/Attio session check"
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sent",
+        "responded",
+        "interested",
+        "rejected",
+        "other",
+        "awaiting",
+        "cold",
+        "automatic",
+        "delivery",
+        "scheduled",
+        "awaiting_review",
+        "total_contacts"
+      ],
+      "properties": {
+        "sent": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "responded": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "interested": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rejected": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "other": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "awaiting": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cold": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "automatic": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "delivery": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "scheduled": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "awaiting_review": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total_contacts": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

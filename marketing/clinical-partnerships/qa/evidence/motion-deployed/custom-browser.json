@@ -1,0 +1,16 @@
+{
+  "url": "https://partners-preview.goocampusglobal.com/",
+  "checked_at": "2026-10-09T13:07:33.611Z",
+  "viewports": [
+    390,
+    1440
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "motionPreference": "no-preference",
+  "errors": [],
+  "dns_override": "Exact hostname mapped to 52.74.6.109 from current public DNS; normal certificate verification",
+  "https_errors_ignored": false
+}

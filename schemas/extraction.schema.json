@@ -1,0 +1,660 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Provider extraction",
+  "description": "Facts extracted from one provider's cached pages. Omit or null anything the pages do not state; never guess.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "domain",
+    "organization",
+    "programs",
+    "people",
+    "news",
+    "emails"
+  ],
+  "properties": {
+    "domain": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "street": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "city": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "region": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "postal_code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "main_phone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fax": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "general_inbox": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "contact_form_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ownership_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "health_system": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "university_affiliation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "year_founded": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "bed_count": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "residency_program_count": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "accreditations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rankings_awards": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "centres_of_excellence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "timezone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "international_office": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "social_links": {
+          "type": "object"
+        },
+        "mission": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "accepts_imgs": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "img_requirements": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "marketplace_listings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "img_friendliness_score": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "price_band": {
+          "enum": [
+            "free",
+            "under_1k",
+            "1k_3k",
+            "3k_6k",
+            "over_6k",
+            "unknown",
+            null
+          ]
+        },
+        "site_freshness": {
+          "enum": [
+            "current",
+            "dated",
+            "stale",
+            "unknown",
+            null
+          ]
+        },
+        "pitch_angle": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "priority_score": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 3
+        },
+        "details": {
+          "type": "object"
+        },
+        "field_sources": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^https?://"
+          }
+        }
+      }
+    },
+    "programs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "type",
+          "source_url",
+          "fee_status",
+          "window_status"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "observership",
+              "elective",
+              "externship",
+              "fellowship",
+              "research",
+              "other"
+            ]
+          },
+          "specialties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "audience": {
+            "enum": [
+              "students",
+              "graduates",
+              "both",
+              "unknown"
+            ]
+          },
+          "duration": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "seats": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "application_fee": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "program_fee": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "refund_policy": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "payment_terms": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "exam_requirements": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "grad_year_limit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "english_test": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "compliance_reqs": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "housing_help": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "certificate_or_lor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "schedule": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "application_window": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "required_documents": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "apply_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "outcomes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "page_last_updated": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "visa_types": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "hands_on": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "virtual_option": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "details": {
+            "type": "object"
+          },
+          "source_url": {
+            "type": "string",
+            "pattern": "^https?://"
+          },
+          "fee_status": {
+            "enum": [
+              "stated",
+              "free",
+              "paid_position",
+              "on_request",
+              "not_stated",
+              "not_checked"
+            ],
+            "description": "Why the fee is or is not known. stated: program_fee or application_fee holds it; free: the page says there is no charge; paid_position: the page states a salary or stipend; on_request: price given only after sign-up, quote or contact (program_fee may describe how to get it); not_stated: the program's pages were read and give no fee; not_checked: no program, fees or apply page was read."
+          },
+          "window_status": {
+            "enum": [
+              "fixed_dates",
+              "rolling",
+              "not_stated",
+              "not_checked"
+            ],
+            "description": "Why the application window is or is not known. fixed_dates: deadlines or intake dates are given; rolling: applications accepted any time or monthly starts; not_stated: the program's pages were read and give no timing; not_checked: no program or apply page was read."
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "anyOf": [
+                {
+                  "properties": {
+                    "program_fee": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "program_fee"
+                  ]
+                },
+                {
+                  "properties": {
+                    "application_fee": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "application_fee"
+                  ]
+                }
+              ]
+            },
+            "then": {
+              "properties": {
+                "fee_status": {
+                  "enum": [
+                    "stated",
+                    "free",
+                    "on_request"
+                  ]
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "fee_status": {
+                  "not": {
+                    "const": "stated"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "application_window": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "application_window"
+              ]
+            },
+            "then": {
+              "properties": {
+                "window_status": {
+                  "enum": [
+                    "fixed_dates",
+                    "rolling"
+                  ]
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "window_status": {
+                  "not": {
+                    "const": "fixed_dates"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "people": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "full_name",
+          "role_tier",
+          "source_url"
+        ],
+        "properties": {
+          "full_name": {
+            "type": "string"
+          },
+          "credentials": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "department": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "role_tier": {
+            "enum": [
+              "decision_maker",
+              "coordinator",
+              "other"
+            ]
+          },
+          "is_outreach_target": {
+            "type": "boolean"
+          },
+          "direct_phone": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "office_location": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "bio_snippet": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "is_img": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "research_interests": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "tenure": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "linkedin_url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^https://([a-z]+\\.)?linkedin\\.com/in/"
+          },
+          "source_url": {
+            "type": "string",
+            "pattern": "^https?://"
+          }
+        }
+      }
+    },
+    "news": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "headline",
+          "url"
+        ],
+        "properties": {
+          "headline": {
+            "type": "string"
+          },
+          "published_on": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https?://"
+          }
+        }
+      }
+    },
+    "emails": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "address",
+          "kind",
+          "source_url"
+        ],
+        "properties": {
+          "address": {
+            "type": "string",
+            "format": "email"
+          },
+          "kind": {
+            "enum": [
+              "published",
+              "generic_inbox"
+            ]
+          },
+          "person_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_url": {
+            "type": "string",
+            "pattern": "^https?://"
+          }
+        }
+      }
+    }
+  }
+}

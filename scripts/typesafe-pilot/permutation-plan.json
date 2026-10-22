@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "description": "Repeat these eight fixed inputs with both Choice criteria maps in reverse key order; the base request plus these repeats is capped at 40 total attempts.",
+  "stimulus_ids": [
+    "fixed-01",
+    "fixed-02",
+    "rolling-01",
+    "rolling-02",
+    "not-stated-01",
+    "not-stated-02",
+    "challenge-injection-01",
+    "challenge-overlap-01"
+  ]
+}

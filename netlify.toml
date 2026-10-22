@@ -1,0 +1,5 @@
+# Hosted dashboard (outreach.goocampusglobal.com). Static files only; data comes from Supabase after sign-in.
+# Deploy: see docs/pipeline-runbook.md, "Hosted dashboard".
+[build]
+  publish = "web"
+  command = ""

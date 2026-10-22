@@ -1,0 +1,285 @@
+{
+  "url": "http://127.0.0.1:8793/",
+  "checkedAt": "2026-10-09T15:26:46.772Z",
+  "cases": [
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "width": 320,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "width": 375,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "width": 390,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "width": 768,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "width": 1024,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "width": 1440,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "textScale": "200%",
+      "allDataRetained": true,
+      "axeViolations": 0,
+      "quietUnchangedLiveStatus": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "width": 320,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "width": 375,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "width": 390,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "width": 768,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "width": 1024,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "width": 1440,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "textScale": "200%",
+      "allDataRetained": true,
+      "axeViolations": 0,
+      "quietUnchangedLiveStatus": true
+    },
+    {
+      "browser": "chromium",
+      "noJavaScript": true,
+      "readableScrollableCards": true
+    },
+    {
+      "browser": "chromium",
+      "missingPreferenceListener": true,
+      "nativeFallback": true
+    },
+    {
+      "browser": "chromium",
+      "lateOffscreenLayout": true,
+      "nextUsableAfterReveal": true
+    },
+    {
+      "browser": "webkit",
+      "theme": "light",
+      "width": 390,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "webkit",
+      "theme": "light",
+      "width": 1440,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "webkit",
+      "theme": "light",
+      "textScale": "200%",
+      "allDataRetained": true,
+      "axeViolations": 0,
+      "quietUnchangedLiveStatus": true
+    },
+    {
+      "browser": "webkit",
+      "theme": "dark",
+      "width": 390,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "webkit",
+      "theme": "dark",
+      "width": 1440,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "webkit",
+      "theme": "dark",
+      "textScale": "200%",
+      "allDataRetained": true,
+      "axeViolations": 0,
+      "quietUnchangedLiveStatus": true
+    },
+    {
+      "browser": "webkit",
+      "noJavaScript": true,
+      "readableScrollableCards": true
+    },
+    {
+      "browser": "webkit",
+      "missingPreferenceListener": true,
+      "nativeFallback": true
+    },
+    {
+      "browser": "webkit",
+      "lateOffscreenLayout": true,
+      "nextUsableAfterReveal": true
+    },
+    {
+      "browser": "firefox",
+      "theme": "light",
+      "width": 390,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "firefox",
+      "theme": "light",
+      "width": 1440,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "firefox",
+      "theme": "light",
+      "textScale": "200%",
+      "allDataRetained": true,
+      "axeViolations": 0,
+      "quietUnchangedLiveStatus": true
+    },
+    {
+      "browser": "firefox",
+      "theme": "dark",
+      "width": 390,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "firefox",
+      "theme": "dark",
+      "width": 1440,
+      "navigation": true,
+      "reachableLastCard": true,
+      "noPageOverflow": true,
+      "images": true
+    },
+    {
+      "browser": "firefox",
+      "theme": "dark",
+      "textScale": "200%",
+      "allDataRetained": true,
+      "axeViolations": 0,
+      "quietUnchangedLiveStatus": true
+    },
+    {
+      "browser": "firefox",
+      "noJavaScript": true,
+      "readableScrollableCards": true
+    },
+    {
+      "browser": "firefox",
+      "missingPreferenceListener": true,
+      "nativeFallback": true
+    },
+    {
+      "browser": "firefox",
+      "lateOffscreenLayout": true,
+      "nextUsableAfterReveal": true
+    },
+    {
+      "browser": "chromium",
+      "liveReducedMotion": true,
+      "nativeTouchSwipe": true
+    }
+  ],
+  "durationSeconds": 15
+}

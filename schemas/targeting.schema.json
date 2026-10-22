@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Targeting profile",
+  "description": "Ranks providers for outreach. Never blocks collection: require = ready to email, prefer = +1 point each, exclude = left off the shortlist.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "description",
+    "require"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "require": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "accepts_imgs": {
+          "type": "boolean",
+          "description": "The provider is confirmed to accept international graduates"
+        },
+        "named_person": {
+          "type": "boolean",
+          "description": "The usable email must belong to a named person, not a shared inbox"
+        },
+        "email_check": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "verified",
+              "likely",
+              "published",
+              "unconfirmed"
+            ]
+          },
+          "description": "Email check results that count: verified = passed, likely = published on a server that accepts every address, published = unconfirmed but printed on the provider's own site (never a guess)"
+        },
+        "provider_types": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "academic",
+              "community",
+              "placement_company",
+              "fellowship"
+            ]
+          }
+        },
+        "min_img_fit": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        }
+      }
+    },
+    "prefer": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "provider_types": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "academic",
+              "community",
+              "placement_company",
+              "fellowship"
+            ]
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "img_directory",
+              "high_img_hospital",
+              "placement_partner_list",
+              "country_registry",
+              "web_search",
+              "referral"
+            ]
+          }
+        },
+        "open_to_partnerships": {
+          "type": "boolean"
+        },
+        "contactable": {
+          "type": "boolean"
+        },
+        "not_catch_all": {
+          "type": "boolean",
+          "description": "The email domain does not accept every address, so emails can be verified"
+        },
+        "min_img_fit": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        }
+      }
+    },
+    "exclude": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "do_not_contact": {
+          "type": "boolean"
+        },
+        "domains": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "refuses_imgs": {
+          "type": "boolean",
+          "description": "Leave off providers that say they do not take international graduates; silence is not a refusal"
+        }
+      }
+    }
+  }
+}

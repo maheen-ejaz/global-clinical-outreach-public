@@ -1,0 +1,30 @@
+{
+  "mode": "built-in imagegen",
+  "generated_on": "2026-10-12",
+  "assets": [
+    {
+      "key": "learning",
+      "source_path": "exec-e0d2b5a7-3d94-4e75-b9a5-97caf7ff409e.png",
+      "alt": "A physician mentor and a medical graduate discussing career goals.",
+      "prompt": "Use case: photorealistic-natural. Asset: editorial medical mentorship image for GooCampusWorld partnership website. Generate one landscape 4:3 photograph, premium calm editorial documentary style. An experienced physician mentor in understated professional clothing speaks with a younger adult medical graduate across a small office table, genuine thoughtful exchange, notebook and laptop, no readable screen or writing. Medium close composition, human interaction as central subject, natural daylight, neutral stone and navy palette, believable anatomy, understated academic office. Different from broad architectural atrium imagery. Fictional adults and generic location, no branding, no claims of real staff or provider relationship, no patient, no text or watermark."
+    },
+    {
+      "key": "observership",
+      "source_path": "exec-17e0e62b-6bb3-44c1-8912-f6b9e7ebc146.png",
+      "prompt": "Use case: photorealistic-natural. Asset: clinical observership example course-card photograph, landscape 4:3. An experienced doctor explains a de-identified clinical teaching diagram to two adult medical observers in a generic hospital team room. Three-quarter medium view, focused faces, genuine non-posed documentary feeling, one doctor white coat and two observers professional attire. Cool soft window light, charcoal and muted blue palette, realistic hands. No patients, no identifiable medical records, no readable writing, no brands or hospital logos, no watermark. Fictional generic scene, no real provider endorsement. Central people and teaching rather than architecture.",
+      "alt": "A doctor explaining a teaching diagram to two medical observers."
+    },
+    {
+      "key": "elective",
+      "source_path": "exec-56a9314e-53e8-4f45-b2e6-66565a567f2c.png",
+      "prompt": "Use case: photorealistic-natural. Asset: medical student elective course-card photograph, landscape 4:3. Editorial close-up of an adult clinical instructor teaching one adult medical student with a clearly synthetic medical simulation mannequin in a skills laboratory. Mannequin obviously plastic training equipment, no gore. Instructor teaches basic examination, composition focused on hands and equipment with partial people in background. Natural soft light, neutral modern textures, muted palette, coherent anatomy, no patient, no medical records, no text/logo/watermark. Fictional generic scene, no institution or partnership implied.",
+      "alt": "An instructor and medical student practising with a simulation mannequin."
+    },
+    {
+      "key": "attachment",
+      "source_path": "exec-e804b7da-6859-4b53-b1ca-b3f04f44abab.png",
+      "prompt": "Use case: photorealistic-natural. Asset: clinical attachment example course-card editorial still-life photograph, landscape 4:3. Overhead photograph of a tidy clinical learning desk: open blank notebook, dark pen, simple stethoscope, a neutral closed tablet and unmarked index cards on warm grey linen. Quiet sparse balanced composition, directional soft daylight, subtle shadows and close texture detail, refined publication photography. No people, no readable text or digits, no logos, no medical/patient records, no watermark. Distinct from broad hospital architecture.",
+      "alt": "A notebook, stethoscope and tablet arranged on a clinical learning desk."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "ticket": "GOO-1539",
+  "published_source_revision": "79dccdbfef67e89a5d1a47c912671f162f96d06e",
+  "source_pr": "https://github.com/maheen-ejaz/global-clinical-outreach/pull/68",
+  "netlify_team": "GooCampus Team",
+  "netlify_site_id": "c6f69133-aea0-4f88-8e7d-78d7c4332e24",
+  "netlify_deploy_id": "6acc8df9ad36738d279cabea",
+  "deploy_state": "ready",
+  "published_at": "2026-10-12T07:36:27.857Z",
+  "review_url": "https://partners-preview.goocampusglobal.com/",
+  "fallback_url": "https://goocampus-clinical-partners-preview.netlify.app/",
+  "immutable_deploy_url": "https://6acc8df9ad36738d279cabea--goocampus-clinical-partners-preview.netlify.app/",
+  "main_site_integration_owner": "Current GooCampusWorld website team",
+  "final_route": null,
+  "maheen_review": "pending",
+  "main_site_integration": "pending",
+  "outreach_readiness": "pending final integration and separate Gmail prerequisites",
+  "copy_revision": "Full-page copy review: main narrative 607 to 547 words; original meaning and markup retained",
+  "motion_revision": "Page-local Attio Mono motion: 4px section settling, directional control feedback, native FAQ morph; reduced-motion/focus/fallback safeguards",
+  "carousel_revision": "Four explicitly fictional programme cards, AI-generated responsive imagery, dates, eligibility and separate fee units; native swipe/keyboard controls with no autoplay and reduced-motion/no-JS safeguards",
+  "marketing_revision": "Two original AI editorial images, asymmetric benefit bento, compact process cards and page-local 16px/1.5px outline icons; original Mono tokens and existing carousel/motion/contact behavior retained",
+  "imagery_revision": "Architecture and laboratory views with four varied built-in editorial images: mentorship, clinical teaching, simulation and still life; repeated AI captions removed by user request, source provenance preserved",
+  "design_revision": "Attio Mono v2: scoped token recipes, responsive layout and control states; locally bundled Inter 400 for reading; approved page motion retained with v2 easing and reduced-motion behavior.",
+  "presentation_revision": "Company-facing CTAs/contact, direct company details, brief mentorship/audience relevance and native exclusive FAQ",
+  "verification": {
+    "served_files_matching_source": 27,
+    "live_browser_cases": 29,
+    "live_browser_duration_seconds": 34,
+    "evidence": "qa/evidence/navy-deployed/"
+  },
+  "credibility_revision": "GooCampus network: three direct operated-site links and owner-confirmed decade history, without exclusivity or accreditation claims",
+  "navy_revision": "Original Attio Mono v2 navy-to-blue primary CTAs/process numbers, themed headings/actions/focus, blue-tinted network cards; final contact retains buttons without repeated visible email/phone"
+}

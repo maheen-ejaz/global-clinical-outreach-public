@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" role="img" aria-labelledby="title desc">
+  <title id="title">Clinical education, in conversation</title>
+  <desc id="desc">Two open books face one another, joined by a shared conversation line. An abstract illustration of learning and partnership.</desc>
+  <rect width="320" height="240" rx="8" fill="#f7f7f8"/>
+  <g fill="none" stroke="#18181b" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M38 77 108 55 108 153 38 175Z" fill="#fff"/>
+    <path d="M108 55 160 83 160 181 108 153" fill="#e7e7ea"/>
+    <path d="M160 83 212 55 212 153 160 181" fill="#fff"/>
+    <path d="M212 55 282 77 282 175 212 153" fill="#e7e7ea"/>
+    <path d="m52 91 41-13m-41 30 41-13m-41 30 41-13m-41 30 28-9M174 97l24-13m-24 30 24-13m-24 30 24-13m-24 30 17-9" stroke="#71717a"/>
+    <path d="M38 184 108 162 160 190 212 162 282 184" stroke="#71717a"/>
+    <path d="M135 45h50m-25-25v50"/>
+    <path d="M62 205h196" stroke="#d6d6db"/>
+  </g>
+</svg>

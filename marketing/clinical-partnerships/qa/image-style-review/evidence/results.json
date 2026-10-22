@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-09T17:27:34.587Z",
+  "cases": [
+    {
+      "theme": "light",
+      "width": 390,
+      "directions": 5,
+      "imagesDecoded": true,
+      "contextSwitch": true,
+      "keyboardFocus": true,
+      "noOverflow": true,
+      "axeViolations": 0
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "directions": 5,
+      "imagesDecoded": true,
+      "contextSwitch": true,
+      "keyboardFocus": true,
+      "noOverflow": true,
+      "axeViolations": 0
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "directions": 5,
+      "imagesDecoded": true,
+      "contextSwitch": true,
+      "keyboardFocus": true,
+      "noOverflow": true,
+      "axeViolations": 0
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "directions": 5,
+      "imagesDecoded": true,
+      "contextSwitch": true,
+      "keyboardFocus": true,
+      "noOverflow": true,
+      "axeViolations": 0
+    }
+  ],
+  "errors": [],
+  "noJavaScriptImagesAndLinks": true,
+  "durationSeconds": 3
+}

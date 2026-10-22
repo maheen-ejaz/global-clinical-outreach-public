@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 3,
+  "contractVersion": "com.goocampus.infisical-profile/v3",
+  "projectId": "1b056234-5b7a-4d98-87a2-635730076e34",
+  "authentication": {
+    "mode": "user-session"
+  },
+  "repository": {
+    "id": "global-clinical-outreach",
+    "defaultBranch": "main",
+    "origin": "https://github.com/maheen-ejaz/global-clinical-outreach.git"
+  },
+  "cliVersion": {
+    "min": "0.43.125",
+    "maxExclusive": "0.44.0"
+  },
+  "profiles": {
+    "prod-pipeline": {
+      "environment": "prod",
+      "paths": [
+        {
+          "environment": "prod",
+          "path": "/Production/Pipeline/v1",
+          "variables": [
+            "FIRECRAWL_API_KEY",
+            "REOON_API_KEY",
+            "SUPABASE_SERVICE_ROLE_KEY",
+            "SUPABASE_URL"
+          ]
+        }
+      ],
+      "requiredVariables": [
+        "FIRECRAWL_API_KEY",
+        "REOON_API_KEY",
+        "SUPABASE_SERVICE_ROLE_KEY",
+        "SUPABASE_URL"
+      ],
+      "purpose": "Global clinical outreach prospect research pipeline",
+      "runbook": "docs/pipeline-runbook.md",
+      "expand": false,
+      "commands": [
+        "outreach-discover",
+        "outreach-scrape",
+        "outreach-load",
+        "outreach-emails",
+        "outreach-report",
+        "outreach-email-domain",
+        "outreach-shortlist",
+        "outreach-publish",
+        "outreach-viewers",
+        "outreach-activity"
+      ]
+    },
+    "dev-typesafe": {
+      "environment": "dev",
+      "paths": [
+        {
+          "environment": "dev",
+          "path": "/TypeSafe",
+          "variables": [
+            "TYPESAFE_API_KEY"
+          ]
+        }
+      ],
+      "requiredVariables": [
+        "TYPESAFE_API_KEY"
+      ],
+      "purpose": "Synthetic TypeSafe smoke checks and bounded offline pilot evaluations",
+      "runbook": "docs/typesafe-smoke.md",
+      "expand": false,
+      "commands": [
+        "dev-typesafe-smoke",
+        "dev-typesafe-pilot"
+      ]
+    }
+  },
+  "commands": {
+    "outreach-discover": {
+      "profile": "prod-pipeline",
+      "executable": "npm",
+      "arguments": [
+        "run",
+        "outreach:discover"
+      ],
+      "timeoutSeconds": 900,
+      "passthroughVariables": [
+        "OUTREACH_BATCH",
+        "OUTREACH_DOMAIN",
+        "OUTREACH_PAGES",
+        "OUTREACH_REFRESH"
+      ]
+    },
+    "outreach-scrape": {
+      "profile": "prod-pipeline",
+      "executable": "npm",
+      "arguments": [
+        "run",
+        "outreach:scrape"
+      ],
+      "timeoutSeconds": 900,
+      "passthroughVariables": [
+        "OUTREACH_BATCH",
+        "OUTREACH_DOMAIN",
+        "OUTREACH_PAGES",
+        "OUTREACH_REFRESH"
+      ]
+    },
+    "outreach-load": {
+      "profile": "prod-pipeline",
+      "executable": "npm",
+      "arguments": [
+        "run",
+        "outreach:load"
+      ],
+      "timeoutSeconds": 900,
+      "passthroughVariables": [
+        "OUTREACH_BATCH",
+        "OUTREACH_DOMAIN",
+        "OUTREACH_PAGES",
+        "OUTREACH_REFRESH"
+      ]
+    },
+    "outreach-emails": {
+      "profile": "prod-pipeline",
+      "executable": "npm",
+      "arguments": [
+        "run",
+        "outreach:emails"
+      ],
+      "timeoutSeconds": 900,
+      "passthroughVariables": [
+        "OUTREACH_BATCH",
+        "OUTREACH_DOMAIN",
+        "OUTREACH_PAGES",
+        "OUTREACH_REFRESH"
+      ]
+    },
+    "outreach-report": {
+      "profile": "prod-pipeline",
+      "executable": "npm",
+      "arguments": [
+        "run",
+        "outreach:report"
+      ],
+      "timeoutSeconds": 900,
+      "passthroughVariables": [
+        "OUTREACH_BATCH",
+        "OUTREACH_DOMAIN",
+        "OUTREACH_PAGES",
+        "OUTREACH_REFRESH"
+      ]
+    },
+    "outreach-email-domain": {
+      "profile": "prod-pipeline",
+      "executable": "npm",
+      "arguments": [
+        "run",
+        "outreach:email-domain"
+      ],
+      "timeoutSeconds": 900,
+      "passthroughVariables": [
+        "OUTREACH_BATCH",
+        "OUTREACH_DOMAIN",
+        "OUTREACH_PAGES",
+        "OUTREACH_REFRESH"
+      ]
+    },
+    "outreach-shortlist": {
+      "profile": "prod-pipeline",
+      "executable": "npm",
+      "arguments": [
+        "run",
+        "outreach:shortlist"
+      ],
+      "timeoutSeconds": 900,
+      "passthroughVariables": [
+        "OUTREACH_BATCH",
+        "OUTREACH_DOMAIN",
+        "OUTREACH_PAGES",
+        "OUTREACH_REFRESH"
+      ]
+    },
+    "outreach-publish": {
+      "profile": "prod-pipeline",
+      "executable": "npm",
+      "arguments": [
+        "run",
+        "outreach:publish"
+      ],
+      "timeoutSeconds": 900,
+      "passthroughVariables": [
+        "OUTREACH_BATCH",
+        "OUTREACH_DOMAIN",
+        "OUTREACH_PAGES",
+        "OUTREACH_REFRESH"
+      ]
+    },
+    "outreach-viewers": {
+      "profile": "prod-pipeline",
+      "executable": "npm",
+      "arguments": [
+        "run",
+        "outreach:viewers"
+      ],
+      "timeoutSeconds": 900,
+      "passthroughVariables": [
+        "OUTREACH_BATCH",
+        "OUTREACH_DOMAIN",
+        "OUTREACH_PAGES",
+        "OUTREACH_REFRESH"
+      ]
+    },
+    "outreach-activity": {
+      "profile": "prod-pipeline",
+      "executable": "npm",
+      "arguments": [
+        "run",
+        "outreach:activity"
+      ],
+      "timeoutSeconds": 900,
+      "passthroughVariables": []
+    },
+    "dev-typesafe-smoke": {
+      "profile": "dev-typesafe",
+      "executable": "node",
+      "arguments": [
+        "scripts/typesafe-smoke.mjs"
+      ],
+      "timeoutSeconds": 30,
+      "passthroughVariables": []
+    },
+    "dev-typesafe-pilot": {
+      "profile": "dev-typesafe",
+      "executable": "node",
+      "arguments": [
+        "scripts/typesafe-pilot/run-typesafe.mjs"
+      ],
+      "timeoutSeconds": 840,
+      "passthroughVariables": []
+    }
+  }
+}

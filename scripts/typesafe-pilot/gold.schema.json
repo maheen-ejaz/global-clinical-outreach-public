@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Independently reviewed synthetic window-status labels",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "review_status",
+    "description",
+    "independent_review",
+    "cases"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "review_status": {
+      "enum": [
+        "pending_parent_blind_review",
+        "parent_adjudicated_provisional",
+        "parent_adjudicated"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "independent_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status_labels_agreed",
+        "reviewed_before_typesafe_output",
+        "parent_adjudicated_evidence_ids"
+      ],
+      "properties": {
+        "status_labels_agreed": {
+          "const": 40
+        },
+        "reviewed_before_typesafe_output": {
+          "const": true
+        },
+        "parent_adjudicated_evidence_ids": {
+          "const": true
+        }
+      }
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 40,
+      "maxItems": 40,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "stimulus_id",
+          "expected_window_status",
+          "expected_evidence_id",
+          "expected_source_url",
+          "expected_exact_quote",
+          "no_update",
+          "adjudication_note"
+        ],
+        "properties": {
+          "stimulus_id": {
+            "type": "string"
+          },
+          "expected_window_status": {
+            "enum": [
+              "fixed_dates",
+              "rolling",
+              "not_stated",
+              "not_checked",
+              "unclear"
+            ]
+          },
+          "expected_evidence_id": {
+            "type": "string"
+          },
+          "expected_source_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "expected_exact_quote": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "no_update": {
+            "const": true
+          },
+          "adjudication_note": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

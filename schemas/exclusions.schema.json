@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Excluded providers",
+  "description": "Domains never to research again, with the reason and the batch that found it. Subdomains are excluded too.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "domain",
+      "reason",
+      "found_in"
+    ],
+    "properties": {
+      "domain": {
+        "type": "string",
+        "pattern": "^[a-z0-9.-]+\\.[a-z]{2,}$"
+      },
+      "reason": {
+        "type": "string",
+        "minLength": 10
+      },
+      "found_in": {
+        "type": "string",
+        "description": "Batch that found the problem"
+      },
+      "recheck_after": {
+        "type": "string",
+        "format": "date",
+        "description": "Optional: revisit after this date (e.g. a paused program)"
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Bulk send",
+  "description": "For bulk sending: any provider that does not refuse IMGs, with a shared inbox or named email that passed our check or is printed on its own site. Never non-viable or forbidden providers.",
+  "require": {
+    "email_check": [
+      "verified",
+      "likely",
+      "published"
+    ]
+  },
+  "prefer": {
+    "provider_types": [
+      "community"
+    ],
+    "sources": [
+      "img_directory",
+      "high_img_hospital"
+    ],
+    "open_to_partnerships": true,
+    "contactable": true,
+    "not_catch_all": true,
+    "min_img_fit": 3
+  },
+  "exclude": {
+    "do_not_contact": true,
+    "refuses_imgs": true
+  }
+}

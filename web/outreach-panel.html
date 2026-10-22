@@ -1,0 +1,33 @@
+<div id="panel-outreach" role="tabpanel" aria-labelledby="tab-outreach" hidden>
+  <section class="card section">
+    <div class="card-head"><div><div class="caption">Private workspace</div><h2 class="title">Outreach</h2><p id="outreachAccess" class="caption muted"></p></div><button class="btn" id="outreachRefresh">Refresh activity</button></div>
+    <div class="card-body"><p id="outreachCounts"></p><p id="outreachFreshness" class="caption muted"></p>
+      <div class="actions"><label>Find a provider <input class="search" id="outreachSearch" type="search" placeholder="Provider, recipient or subject"></label>
+      <label>Show <select class="btn" id="outreachFilter"><option value="">All shortlisted providers</option><option value="selected">Pilot selections</option><option value="draft">Drafts</option><option value="finalised">Finalised</option><option value="locked">Awaiting Gmail scheduling</option><option value="scheduling">Needs Gmail verification</option><option value="scheduled">Scheduled</option><option value="sent">Sent</option><option value="suppressed">Do not contact</option></select></label></div>
+      <p id="outreachStatus" role="status" aria-live="polite"></p>
+    </div>
+    <div class="table-wrap"><table class="data" id="outreachTable"><thead><tr><th scope="col">Provider</th><th scope="col">Recipient</th><th scope="col">Status</th><th scope="col">Subject</th><th scope="col">Scheduled time (IST)</th><th scope="col">Details</th></tr></thead><tbody></tbody></table></div>
+  </section>
+  <section class="card section" id="outreachEditor" hidden>
+    <div class="card-head"><div><h2 class="title" id="outreachProvider"></h2><p id="outreachState" class="caption"></p></div></div>
+    <div class="card-body outreach-editor">
+      <label>Recipient <select class="search" id="oe-recipient"></select></label>
+      <label>Subject <input class="search" id="oe-subject" maxlength="250"></label>
+      <label>Email <textarea class="search" id="oe-body" aria-describedby="oe-guidance outreachStatus" rows="16" maxlength="20000" placeholder="Select a recipient and save to request a prepared draft from Codex."></textarea></label>
+      <div class="outreach-columns"><label>Recipient timezone <input class="search" id="oe-timezone" placeholder="e.g. America/New_York"></label><label>Timezone source <input class="search" id="oe-timezone_source" placeholder="Source URL and location evidence"></label></div>
+      <p id="oe-guidance" class="caption muted">Use verified programme facts. Keep the planned offering and fictional examples clearly identified. No attachments in the first email.</p>
+      <p id="outreachReview" class="caption"></p>
+      <div class="actions"><button class="btn" id="oe-save">Save draft</button><button class="btn primary" id="oe-finalise">Finalise and propose time</button><button class="btn" id="oe-unlock">Reopen approval</button><button class="btn" id="oe-park">Remove pilot selection</button></div>
+      <div id="outreachTime" class="outreach-editor" hidden>
+        <label>Send date and time in the recipient timezone <input type="datetime-local" class="search" id="oe-time" aria-describedby="outreachLocalTime"></label>
+        <p id="outreachLocalTime" class="caption"></p><button class="btn" id="oe-suggest">Suggest next morning slot</button>
+        <div id="oe-confirmations"><label class="outreach-check"><input type="checkbox" id="oe-calendar"> <span id="oe-calendar-label">I checked the recipient’s business hours, holidays and this campaign date.</span></label>
+        <label class="outreach-check"><input type="checkbox" id="oe-checks"> <span id="oe-checks-label">Sender authentication, recipient eligibility, commercial wording and signature are checked. I approve this exact recipient, subject, body and time for Gmail scheduling.</span></label></div>
+        <button class="btn primary" id="oe-lock">Lock approval for Gmail scheduling</button>
+      </div>
+      <p id="outreachProof" class="caption muted"></p>
+      <details><summary>Provider and recipient source pages</summary><div id="outreachSource"></div></details>
+      <details open><summary>Activity and saved versions</summary><ol id="outreachHistory"></ol></details>
+    </div>
+  </section>
+</div>

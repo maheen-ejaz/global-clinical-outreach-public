@@ -1,0 +1,162 @@
+{
+  "url": "https://goocampus-clinical-partners-preview.netlify.app/",
+  "checkedAt": "2026-10-09T13:03:49.512Z",
+  "cases": [
+    {
+      "browser": "chromium",
+      "theme": "light",
+      "oneTimeSections": 8,
+      "fullOpacity": true,
+      "reducedFirstLoad": true,
+      "liveReduction": true,
+      "nativeFaq": true,
+      "arrowFeedback": true
+    },
+    {
+      "browser": "chromium",
+      "theme": "dark",
+      "oneTimeSections": 8,
+      "fullOpacity": true,
+      "reducedFirstLoad": true,
+      "liveReduction": true,
+      "nativeFaq": true,
+      "arrowFeedback": true
+    },
+    {
+      "browser": "chromium",
+      "missingApi": "IntersectionObserver",
+      "readableNativeFallback": true
+    },
+    {
+      "browser": "chromium",
+      "missingApi": "animate",
+      "readableNativeFallback": true
+    },
+    {
+      "browser": "chromium",
+      "missingApi": "preferenceListener",
+      "readableNativeFallback": true
+    },
+    {
+      "browser": "chromium",
+      "focusedSection": "hero",
+      "moved": false
+    },
+    {
+      "browser": "chromium",
+      "focusDuringSectionMotion": "cancelled immediately"
+    },
+    {
+      "browser": "chromium",
+      "lifecycle": "simulated visibility/pagehide/persisted pageshow",
+      "cancellationAndResume": true,
+      "replayed": false
+    },
+    {
+      "browser": "webkit",
+      "theme": "light",
+      "oneTimeSections": 8,
+      "fullOpacity": true,
+      "reducedFirstLoad": true,
+      "liveReduction": true,
+      "nativeFaq": true,
+      "arrowFeedback": true
+    },
+    {
+      "browser": "webkit",
+      "theme": "dark",
+      "oneTimeSections": 8,
+      "fullOpacity": true,
+      "reducedFirstLoad": true,
+      "liveReduction": true,
+      "nativeFaq": true,
+      "arrowFeedback": true
+    },
+    {
+      "browser": "webkit",
+      "missingApi": "IntersectionObserver",
+      "readableNativeFallback": true
+    },
+    {
+      "browser": "webkit",
+      "missingApi": "animate",
+      "readableNativeFallback": true
+    },
+    {
+      "browser": "webkit",
+      "missingApi": "preferenceListener",
+      "readableNativeFallback": true
+    },
+    {
+      "browser": "webkit",
+      "focusedSection": "hero",
+      "moved": false
+    },
+    {
+      "browser": "webkit",
+      "focusDuringSectionMotion": "cancelled immediately"
+    },
+    {
+      "browser": "webkit",
+      "lifecycle": "simulated visibility/pagehide/persisted pageshow",
+      "cancellationAndResume": true,
+      "replayed": false
+    },
+    {
+      "browser": "firefox",
+      "theme": "light",
+      "oneTimeSections": 8,
+      "fullOpacity": true,
+      "reducedFirstLoad": true,
+      "liveReduction": true,
+      "nativeFaq": true,
+      "arrowFeedback": true
+    },
+    {
+      "browser": "firefox",
+      "theme": "dark",
+      "oneTimeSections": 8,
+      "fullOpacity": true,
+      "reducedFirstLoad": true,
+      "liveReduction": true,
+      "nativeFaq": true,
+      "arrowFeedback": true
+    },
+    {
+      "browser": "firefox",
+      "missingApi": "IntersectionObserver",
+      "readableNativeFallback": true
+    },
+    {
+      "browser": "firefox",
+      "missingApi": "animate",
+      "readableNativeFallback": true
+    },
+    {
+      "browser": "firefox",
+      "missingApi": "preferenceListener",
+      "readableNativeFallback": true
+    },
+    {
+      "browser": "firefox",
+      "focusedSection": "hero",
+      "moved": false
+    },
+    {
+      "browser": "firefox",
+      "focusDuringSectionMotion": "cancelled immediately"
+    },
+    {
+      "browser": "firefox",
+      "lifecycle": "simulated visibility/pagehide/persisted pageshow",
+      "cancellationAndResume": true,
+      "replayed": false
+    },
+    {
+      "browser": "chromium",
+      "touch": true,
+      "persistentHoverMotion": false
+    }
+  ],
+  "durationSeconds": 66
+}

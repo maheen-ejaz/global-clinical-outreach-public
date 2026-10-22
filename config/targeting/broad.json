@@ -1,0 +1,21 @@
+{
+  "name": "Broad",
+  "description": "Later: any provider not forbidding outreach, including shared inboxes and unconfirmed emails.",
+  "require": {
+    "email_check": [
+      "verified",
+      "likely",
+      "unconfirmed"
+    ]
+  },
+  "prefer": {
+    "provider_types": [
+      "community"
+    ],
+    "open_to_partnerships": true,
+    "min_img_fit": 3
+  },
+  "exclude": {
+    "do_not_contact": true
+  }
+}

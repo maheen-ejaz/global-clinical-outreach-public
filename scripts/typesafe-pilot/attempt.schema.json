@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TypeSafe synthetic pilot request intent",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sequence", "attempt_id", "stimulus_id", "variant", "request_sha256", "intent_recorded_at"],
+  "properties": {
+    "sequence": { "type": "integer", "minimum": 1, "maximum": 40 },
+    "attempt_id": { "type": "string", "pattern": "^[a-z0-9-]+:(base|permuted)$" },
+    "stimulus_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "variant": { "enum": ["base", "permuted"] },
+    "request_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "intent_recorded_at": { "type": "string", "format": "date-time" }
+  }
+}

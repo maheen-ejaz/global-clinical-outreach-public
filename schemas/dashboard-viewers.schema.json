@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hosted dashboard viewers (config/dashboard-viewers.json)",
+  "type": "object",
+  "required": ["viewers"],
+  "additionalProperties": false,
+  "properties": {
+    "viewers": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^[^@\\sA-Z]+@[^@\\sA-Z]+\\.[a-z]{2,}$"}
+    }
+  }
+}

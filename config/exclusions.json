@@ -1,0 +1,106 @@
+[
+  {
+    "domain": "medicine.yale.edu",
+    "reason": "Site explicitly forbids unsolicited outreach to departments",
+    "found_in": "us-pilot-01"
+  },
+  {
+    "domain": "med.uc.edu",
+    "reason": "Visiting international medical student applications are suspended (moratorium)",
+    "found_in": "us-pilot-01",
+    "recheck_after": "2027-04-01"
+  },
+  {
+    "domain": "feinberg.northwestern.edu",
+    "reason": "Elective only open to enrolled students of its global partner schools",
+    "found_in": "us-pilot-01"
+  },
+  {
+    "domain": "imgrotations.com",
+    "reason": "Site returns 404; provider appears defunct",
+    "found_in": "us-pilot-01"
+  },
+  {
+    "domain": "hopkinsmedicine.org",
+    "reason": "No IMG-relevant program found after two scrapes of the observership URL",
+    "found_in": "us-pilot-01"
+  },
+  {
+    "domain": "radiology.duke.edu",
+    "reason": "Radiology fellowships aimed at US-trained physicians; IMG fit scored 1 of 5",
+    "found_in": "us-pilot-01"
+  },
+  {
+    "domain": "weisshospital.com",
+    "reason": "Residency FAQ: Weiss Memorial does not offer observerships",
+    "found_in": "us-02"
+  },
+  {
+    "domain": "cookcountyhealth.org",
+    "reason": "Cook County Health does not provide shadowing or observership experiences",
+    "found_in": "us-02"
+  },
+  {
+    "domain": "guthrie.org",
+    "reason": "Observer policy: observerships are not available to international medical graduates seeking residency",
+    "found_in": "us-02"
+  },
+  {
+    "domain": "medicine.uic.edu",
+    "reason": "No observerships for graduates; only enrolled students with a faculty relationship, and applicants must not contact staff",
+    "found_in": "us-02"
+  },
+  {
+    "domain": "imp.smhs.gwu.edu",
+    "reason": "Observer Training Program is not accepting applications",
+    "found_in": "us-02",
+    "recheck_after": "2027-04-01"
+  },
+  {
+    "domain": "mercymedicalresidency.org",
+    "reason": "Mercy St. Vincent internal medicine residency no longer accepts observership applications",
+    "found_in": "us-02",
+    "recheck_after": "2027-04-01"
+  },
+  {
+    "domain": "sehpsychiatry.org",
+    "reason": "Saint Elizabeths psychiatry externship site no longer resolves (listed in the APA IMG directory)",
+    "found_in": "us-03"
+  },
+  {
+    "domain": "pathology.medicine.uiowa.edu",
+    "reason": "Does not provide observerships for international medical trainees or graduates",
+    "found_in": "us-03"
+  },
+  {
+    "domain": "nicklauschildrens.org",
+    "reason": "International observer requests are not accepted at this time",
+    "found_in": "us-03",
+    "recheck_after": "2027-10-01"
+  },
+  {
+    "domain": "rwjms.rutgers.edu",
+    "reason": "Global health observership only for final-year students of partnering institutions",
+    "found_in": "us-03"
+  },
+  {
+    "domain": "christushealth.org",
+    "reason": "Observation privileges only for currently affiliated programmes, schools and facilities",
+    "found_in": "us-03"
+  },
+  {
+    "domain": "medicine.osu.edu",
+    "reason": "International visiting scholars by OSU invitation only; unsolicited requests not accepted",
+    "found_in": "us-03"
+  },
+  {
+    "domain": "education.ochsner.org",
+    "reason": "International observership only for applicants referred by an Ochsner faculty provider",
+    "found_in": "us-03"
+  },
+  {
+    "domain": "houstonmethodist.org",
+    "reason": "Observerships only for those invited by a Houston Methodist physician",
+    "found_in": "us-03"
+  }
+]

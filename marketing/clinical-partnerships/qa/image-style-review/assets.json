@@ -1,0 +1,67 @@
+[
+  {
+    "key": "documentary",
+    "path": "images/documentary.webp",
+    "original": "originals/documentary.png",
+    "original_source": "/Users/maheenejaz/.codex/generated_images/01a12048-d228-7080-9956-4126f4000412/exec-47da20f7-b48a-4955-8687-717e75d9290f.png",
+    "mode": "built-in imagegen",
+    "width": 1200,
+    "height": 900,
+    "size_bytes": 65640,
+    "sha256": "37518cd4d80e242566073092ca7433251b1a6457b66b7060e1f0dda7bb66723c",
+    "role": "Representative local direction example; not an approved replacement",
+    "rights": "AI-generated fictional illustrative image"
+  },
+  {
+    "key": "architecture",
+    "path": "images/architecture.webp",
+    "original": "originals/architecture.png",
+    "original_source": "/Users/maheenejaz/.codex/generated_images/01a12048-d228-7080-9956-4126f4000412/exec-6d281663-d2ce-415e-9fa0-36ff2c5b7c5c.png",
+    "mode": "built-in imagegen",
+    "width": 1200,
+    "height": 900,
+    "size_bytes": 102564,
+    "sha256": "f41fd616e2c0c167f1974af23b4313227ed069bae1e6ab185ef7651b6e76f740",
+    "role": "User-approved Option 2; exact exemplar reused as production hero",
+    "rights": "AI-generated fictional illustrative image"
+  },
+  {
+    "key": "portrait",
+    "path": "images/portrait.webp",
+    "original": "originals/portrait.png",
+    "original_source": "/Users/maheenejaz/.codex/generated_images/01a12048-d228-7080-9956-4126f4000412/exec-b0c69b74-1e13-4155-b1a1-8efc8651a863.png",
+    "mode": "built-in imagegen",
+    "width": 1200,
+    "height": 900,
+    "size_bytes": 65616,
+    "sha256": "86f176bab301a8c780c22eaa7d6e03130bb3fa8d6c52aa562a3a81ccbb28ad88",
+    "role": "Representative local direction example; not an approved replacement",
+    "rights": "AI-generated fictional illustrative image"
+  },
+  {
+    "key": "monochrome",
+    "path": "images/monochrome.webp",
+    "original": "originals/monochrome.png",
+    "original_source": "/Users/maheenejaz/.codex/generated_images/01a12048-d228-7080-9956-4126f4000412/exec-0c4f7b02-c02b-4be9-9162-a8554f7d13dc.png",
+    "mode": "built-in imagegen",
+    "width": 1200,
+    "height": 900,
+    "size_bytes": 59322,
+    "sha256": "5b54109a82edea422a6a557ca6408b520d30c29831967c50f19109a8ab481d4d",
+    "role": "Representative local direction example; not an approved replacement",
+    "rights": "AI-generated fictional illustrative image"
+  },
+  {
+    "key": "illustration",
+    "path": "images/illustration.webp",
+    "original": "originals/illustration.png",
+    "original_source": "/Users/maheenejaz/.codex/generated_images/01a12048-d228-7080-9956-4126f4000412/exec-3d0dc444-b5b8-44b6-9d60-90a650cf0c87.png",
+    "mode": "built-in imagegen",
+    "width": 1200,
+    "height": 900,
+    "size_bytes": 206142,
+    "sha256": "41fea8bb521e7908d1915ba0a158bc7885d63d16e1282a51b9362a094034f398",
+    "role": "Representative local direction example; not an approved replacement",
+    "rights": "AI-generated fictional illustrative image"
+  }
+]

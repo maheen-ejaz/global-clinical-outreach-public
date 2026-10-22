@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Extra pages",
+  "description": "Pages found by targeted search (staff, leadership, residency program pages) to scrape for a batch.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "domain",
+      "url",
+      "kind"
+    ],
+    "properties": {
+      "domain": {
+        "type": "string",
+        "description": "Organization domain as stored (organizations.domain)"
+      },
+      "url": {
+        "type": "string",
+        "pattern": "^https?://"
+      },
+      "kind": {
+        "enum": [
+          "program",
+          "eligibility",
+          "people",
+          "contact",
+          "international",
+          "news"
+        ]
+      },
+      "reason": {
+        "type": "string"
+      }
+    }
+  }
+}

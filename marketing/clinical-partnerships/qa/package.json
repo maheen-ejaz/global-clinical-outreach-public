@@ -1,0 +1,11 @@
+{
+  "name": "clinical-partnerships-qa",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node browser-checks.mjs"},
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "playwright": "1.64.0",
+    "lighthouse": "13.5.0"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "firecrawl",
+    "reoon"
+  ],
+  "properties": {
+    "checked_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "firecrawl": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "credits",
+        "checked_at",
+        "api_key_name",
+        "period_start",
+        "period_end",
+        "source_url"
+      ],
+      "properties": {
+        "credits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "checked_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "api_key_name": {
+          "const": "global-clinical-outreach-v1"
+        },
+        "period_start": {
+          "type": "string",
+          "format": "date"
+        },
+        "period_end": {
+          "type": "string",
+          "format": "date"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "metric": {
+          "const": "Credits from successful jobs"
+        }
+      }
+    },
+    "reoon": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verifications",
+        "checked_at",
+        "scope",
+        "source_url"
+      ],
+      "properties": {
+        "verifications": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "checked_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "scope": {
+          "const": "Lifetime usage statistics"
+        },
+        "source_url": {
+          "const": "https://emailverifier.reoon.com/overview/"
+        },
+        "daily_credits_remaining": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "daily_credits_limit": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "instant_credits_remaining": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "protocol_id": "gco-window-status-synthetic-v2",
+  "protocol_revision": 2,
+  "state": "ready_after_independent_review",
+  "model": "jev-1.13.0",
+  "endpoint": "https://api.typesafe.ai/v1/systemone",
+  "request": {
+    "timeout_ms": 30000,
+    "redirect": "error",
+    "retry": false,
+    "max_total_usage_tokens_per_response": 10000,
+    "max_total_attempts_including_failures": 40
+  },
+  "attempt_plan": {
+    "natural_page_cases": 24,
+    "challenge_cases": 8,
+    "not_checked_no_call_controls": 8,
+    "base_api_attempts": 32,
+    "option_order_repeats": 8,
+    "maximum_api_attempts": 40
+  },
+  "model_output": {
+    "window_status_choices": [
+      "fixed_dates",
+      "rolling",
+      "not_stated",
+      "unclear"
+    ],
+    "evidence_id_choices": "candidate paragraph IDs present in that stimulus plus none; the evidence question is independent of the window-status answer",
+    "not_checked": "derived from the absence of a program or apply page; never sent to TypeSafe",
+    "unknown_rule": "No candidate means no update and human review; absence from the candidate list alone never means not_stated. For not_stated or unclear, ignore the independent evidence answer and do not export its candidate text or URL.",
+    "positive_evidence_rule": "fixed_dates or rolling must select a candidate paragraph ID from the exact input. Code copies its paragraph and source URL from the frozen fixture."
+  },
+  "acceptance": {
+    "natural_page_accuracy": "At least 22 of 24 exact status matches; report coverage and abstentions separately.",
+    "baseline_comparison": "No more than one additional error versus the independent current-agent extraction on the same 24 page cases.",
+    "not_stated_false_positives": "Zero fixed_dates or rolling predictions on gold not_stated cases.",
+    "not_checked_controls": "All 8 controls make no API request and remain not_checked.",
+    "challenge_cases": "All 8 exact labels; instruction-like page text, negation, old dates, fixed/rolling overlap, misleading dates, and irrelevant context are included.",
+    "option_order": "All 8 repeated inputs return the same window_status choice after reversing criteria key order.",
+    "provenance": "Every fixed_dates or rolling answer has a valid input candidate ID, and its copied paragraph and source URL match the frozen fixture byte-for-byte.",
+    "human_review_time": "Unknown; no human timing study is in scope. Do not claim integration ROI.",
+    "cost_and_latency": "Record actual usage tokens, a published-price estimate from actual usage (not invoice), per-request client wall time, and total run time. Do not infer cost or provider-reported model latency from documentation."
+  },
+  "safety": {
+    "no_app_write": true,
+    "no_screen_or_exclusion_change": true,
+    "no_outreach_or_send_action": true,
+    "no_contact_or_email_input": true,
+    "no_generated_source_text_or_url": true,
+    "low_confidence_or_unclear": "advisory only; manual review",
+    "failed_attempts_consume_cap": true,
+    "resume_duplicate_policy": "Never retry an attempt ID already present in the durable intent journal. Continue only with never-attempted IDs, within the remaining total cap."
+  },
+  "stimuli_sha256": "f796594da24d301e0a7559de42c1ca3780f3347dae73d2653823078d9c8c4a09",
+  "gold_sha256": "397ebbad29bb30e79101a09be38cba826fbd1411ef5b8dc41737d7f1fa5b6590",
+  "agent_baseline_sha256": "49e4932663d28122729ebdff4f0ea12afbe356ad022b25bff9f630d47a199ed0",
+  "price_config_sha256": "7ca3eac8d869e04eb6c3fcf6dac8e568bb7b03bb4097b041c359af23c0ed5af0",
+  "permutation_plan_sha256": "e08f8162e0f4a800d75f5a9620c26df0ce898cc71aae95bbd4f30d518d833c04"
+}

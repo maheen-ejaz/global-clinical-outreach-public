@@ -1,0 +1,13 @@
+{
+  "mode": "built-in imagegen",
+  "prompts": [
+    {
+      "key": "partnership-conversation",
+      "prompt": "Use case: photorealistic-natural\nAsset type: editorial hero photograph for a restrained Attio Mono clinical partnership marketing page.\nScene: a clinician and a clinical-programme administrator, both adults, in a quiet bright hospital education room, discussing a training programme at a small table. A closed notebook and an unobtrusive anatomical model provide medical-education context. Candid attentive conversation, not a posed handshake. Entirely fictional generic people and setting.\nStyle: polished natural editorial photography with realistic skin, hands and fabric; soft window daylight, warm white walls, neutral grey furniture and very restrained clinical blue/sage details. Calm professional mood, no dramatic advertising effect.\nComposition: landscape 4:3, medium-wide eye-level view; keep both faces and the conversation in the central safe area for a modest responsive crop. No embedded copy.\nConstraints: no identifiable institution, logos, signage, readable name badges, text, watermarks, readable screens, patient records or real patients. Do not depict or imply an existing GooCampus partnership."
+    },
+    {
+      "key": "clinical-learning",
+      "prompt": "Use case: photorealistic-natural\nAsset type: supporting editorial image in a clinical-education bento card on an Attio Mono marketing page.\nScene: a carefully composed but natural clinical teaching-room still life: a neutral anatomical model on a pale table beside a closed medical notebook and an unused stethoscope. Softly blurred bright teaching room in the background. Generic fictional setting, no people or patients.\nStyle: premium editorial photography, realistic ceramic/plastic/paper textures, soft side-window daylight, warm whites, pale stone and neutral greys with a small muted clinical-blue detail. Quiet uncluttered visual, no glossy stock-advertisement styling.\nComposition: landscape 4:3, slightly elevated close-medium view, central teaching materials with generous breathing room. Suitable for a card without any text overlay.\nConstraints: no logos, branding, readable text or labels, signage, monitors, patient information or watermark. Illustrative medical education only; no provider relationship implied."
+    }
+  ]
+}

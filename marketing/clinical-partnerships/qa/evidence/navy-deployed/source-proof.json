@@ -1,0 +1,144 @@
+{
+  "url": "https://partners-preview.goocampusglobal.com/",
+  "files": [
+    {
+      "path": "assets/css/attio-mono-scoped.css",
+      "sha256": "8a368c79cbbb812ff12b2b87f498d963b936483d1d6a7883fe1aa92b2f39dbca",
+      "bytes": 12650
+    },
+    {
+      "path": "assets/css/partnership-page.css",
+      "sha256": "eeace9fc204ace45ff2681fc654b63e58763052b7ab4ae2ff8cb77941b7c6295",
+      "bytes": 25475
+    },
+    {
+      "path": "assets/fonts/OFL-Inter-Tight.txt",
+      "sha256": "50240ab035cf1b6b3307940235481d515c4b6de3ab1fa843dbe59e7892cb9d58",
+      "bytes": 4383
+    },
+    {
+      "path": "assets/fonts/OFL-Inter.txt",
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "bytes": 4377
+    },
+    {
+      "path": "assets/fonts/inter-latin-400.woff2",
+      "sha256": "48a0c2503a9c8ec4153302693fff56b3281aba5ce5afd7cf2bd51a03b098cd22",
+      "bytes": 23804
+    },
+    {
+      "path": "assets/fonts/inter-latin-500.woff2",
+      "sha256": "f3779f1efccc4bdcdf9c0a02ab95bf6bd092ed09c48c08cedc725889edd1d19f",
+      "bytes": 24272
+    },
+    {
+      "path": "assets/fonts/inter-tight-latin-600.woff2",
+      "sha256": "db1a039d03ed646ef6a899f9ff92bf2f6fe382a49f1b0992066e85caf88b5be9",
+      "bytes": 22660
+    },
+    {
+      "path": "assets/images/clinical-conversation.svg",
+      "sha256": "77ebfe73653f91668f4729ad2ae44e73c75d29b87887912b46e21b82d7f91df9",
+      "bytes": 1022
+    },
+    {
+      "path": "assets/images/editorial/attachment-480.webp",
+      "sha256": "2537addb40375d35321a225ed0ddc986f1072a29409deea6d0eb1aaa4c4befaf",
+      "bytes": 18070
+    },
+    {
+      "path": "assets/images/editorial/attachment-960.webp",
+      "sha256": "add1e504ecc85efb29bfb199ecf3f9c933f0ead32f90912135654cf3810991ad",
+      "bytes": 69124
+    },
+    {
+      "path": "assets/images/editorial/elective-480.webp",
+      "sha256": "71c076c9bf92e0118a4c3c466b6c06a53c7049d143a5718846aef37807202b49",
+      "bytes": 13426
+    },
+    {
+      "path": "assets/images/editorial/elective-960.webp",
+      "sha256": "39fcfdd8673a67675faf9726c928f15c0754cc35556e0aae6b5cf5c9ba7fe980",
+      "bytes": 30168
+    },
+    {
+      "path": "assets/images/editorial/learning-640.webp",
+      "sha256": "361ee7a923fd77e016722e9ef9e2fde3a54fff8b7d0eb09726105cb367f4b21f",
+      "bytes": 22044
+    },
+    {
+      "path": "assets/images/editorial/learning-960.webp",
+      "sha256": "db63df114c7328051fa2ba6e8410dcd4c4a54aa33da69ae4744f68a7af4888d5",
+      "bytes": 36874
+    },
+    {
+      "path": "assets/images/editorial/observership-480.webp",
+      "sha256": "c02a8cc4324f90dbd927dce73604f7d5d8352e85899a593844ea34b857c04de8",
+      "bytes": 12564
+    },
+    {
+      "path": "assets/images/editorial/observership-960.webp",
+      "sha256": "e4275e1664a9184cd1a15f01ce3ec5448582e1c2a92b720d00ce4294100949db",
+      "bytes": 29498
+    },
+    {
+      "path": "assets/images/goocampus-logo.png",
+      "sha256": "04654eb192c370f712b6fe467effce78acb72d8d83efb28979fcf6d7f0411e99",
+      "bytes": 135729
+    },
+    {
+      "path": "assets/images/institutional/fellowship-480.webp",
+      "sha256": "165e091d832d5bf0003f8344daffeeb93ec90555f56dfad97136f577ba5feddd",
+      "bytes": 19700
+    },
+    {
+      "path": "assets/images/institutional/fellowship-960.webp",
+      "sha256": "61fde06fe558eb052c09fb910b6ef9f144228f44ad6156afc160d110bab00d96",
+      "bytes": 56758
+    },
+    {
+      "path": "assets/images/institutional/hero-640.webp",
+      "sha256": "608d6f18560a03ceb1a1090072145ac263e3b12b7474dd6bba77459786138235",
+      "bytes": 23908
+    },
+    {
+      "path": "assets/images/institutional/hero-960.webp",
+      "sha256": "fd0aca1b7d37c9e06572fde1c7146b1c7cf0bbeaee33e4a6c72a439d9c032d1f",
+      "bytes": 46846
+    },
+    {
+      "path": "assets/images/partnership-social.png",
+      "sha256": "6fafd7687ccf346a40da7ccf97d76659d1f8b71a8ecdc7379836040fafee6363",
+      "bytes": 37938
+    },
+    {
+      "path": "assets/js/carousel.js",
+      "sha256": "0367ac31d041dbad552ad2f85d62479b461449535d6542de787e2ca3c33fdb52",
+      "bytes": 3766
+    },
+    {
+      "path": "assets/js/contact.js",
+      "sha256": "f6209df56e2110ae789a19256fa4633eef5cf63d4c0606b0e893892a769cfafb",
+      "bytes": 829
+    },
+    {
+      "path": "assets/js/motion.js",
+      "sha256": "fa58c7491247360fa29eade18935c74d01c6a2c108d8f0d3f6c3e823044c3b7f",
+      "bytes": 2835
+    },
+    {
+      "path": "index.html",
+      "sha256": "86d390a12ae1d633da4a7259d3159a1b85d32aea32498fae50354ef1c291743a",
+      "bytes": 27994
+    },
+    {
+      "path": "robots.txt",
+      "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+      "bytes": 26
+    }
+  ],
+  "headers": {
+    "content-security-policy": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests",
+    "x-robots-tag": "noindex, nofollow"
+  }
+}

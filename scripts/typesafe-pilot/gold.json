@@ -1,0 +1,372 @@
+{
+  "version": 1,
+  "review_status": "parent_adjudicated_provisional",
+  "description": "Synthetic gold labels. An independent blind agent reviewer agreed with all 40 status labels before TypeSafe output existed; the parent adjudicated the positive evidence IDs and exact source spans after review.",
+  "independent_review": {
+    "status_labels_agreed": 40,
+    "reviewed_before_typesafe_output": true,
+    "parent_adjudicated_evidence_ids": true
+  },
+  "cases": [
+    {
+      "stimulus_id": "fixed-01",
+      "expected_window_status": "fixed_dates",
+      "expected_evidence_id": "fixed-01-p1",
+      "expected_source_url": "https://synthetic.example/fixed-01/apply",
+      "expected_exact_quote": "Applications for the 2028 intake close on 11 January 2028.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "fixed-02",
+      "expected_window_status": "fixed_dates",
+      "expected_evidence_id": "fixed-02-p1",
+      "expected_source_url": "https://synthetic.example/fixed-02/apply",
+      "expected_exact_quote": "Applications for the 2027 intake close on 12 February 2027.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "fixed-03",
+      "expected_window_status": "fixed_dates",
+      "expected_evidence_id": "fixed-03-p1",
+      "expected_source_url": "https://synthetic.example/fixed-03/apply",
+      "expected_exact_quote": "Applications for the 2028 intake close on 13 March 2028.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "fixed-04",
+      "expected_window_status": "fixed_dates",
+      "expected_evidence_id": "fixed-04-p1",
+      "expected_source_url": "https://synthetic.example/fixed-04/apply",
+      "expected_exact_quote": "Applications for the 2027 intake close on 14 April 2027.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "fixed-05",
+      "expected_window_status": "fixed_dates",
+      "expected_evidence_id": "fixed-05-p1",
+      "expected_source_url": "https://synthetic.example/fixed-05/apply",
+      "expected_exact_quote": "Applications for the 2028 intake close on 15 May 2028.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "fixed-06",
+      "expected_window_status": "fixed_dates",
+      "expected_evidence_id": "fixed-06-p1",
+      "expected_source_url": "https://synthetic.example/fixed-06/apply",
+      "expected_exact_quote": "Applications for the 2027 intake close on 16 June 2027.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "fixed-07",
+      "expected_window_status": "fixed_dates",
+      "expected_evidence_id": "fixed-07-p1",
+      "expected_source_url": "https://synthetic.example/fixed-07/apply",
+      "expected_exact_quote": "Applications for the 2028 intake close on 17 July 2028.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "fixed-08",
+      "expected_window_status": "fixed_dates",
+      "expected_evidence_id": "fixed-08-p1",
+      "expected_source_url": "https://synthetic.example/fixed-08/apply",
+      "expected_exact_quote": "Applications for the 2027 intake close on 18 August 2027.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "rolling-01",
+      "expected_window_status": "rolling",
+      "expected_evidence_id": "rolling-01-p1",
+      "expected_source_url": "https://synthetic.example/rolling-01/apply",
+      "expected_exact_quote": "The programme accepts applications at any time; applicants may request a start date each month.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "rolling-02",
+      "expected_window_status": "rolling",
+      "expected_evidence_id": "rolling-02-p1",
+      "expected_source_url": "https://synthetic.example/rolling-02/apply",
+      "expected_exact_quote": "Applications are accepted throughout the year, with monthly placement starts.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "rolling-03",
+      "expected_window_status": "rolling",
+      "expected_evidence_id": "rolling-03-p1",
+      "expected_source_url": "https://synthetic.example/rolling-03/apply",
+      "expected_exact_quote": "The programme accepts applications at any time; applicants may request a start date each month.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "rolling-04",
+      "expected_window_status": "rolling",
+      "expected_evidence_id": "rolling-04-p1",
+      "expected_source_url": "https://synthetic.example/rolling-04/apply",
+      "expected_exact_quote": "Applications are accepted throughout the year, with monthly placement starts.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "rolling-05",
+      "expected_window_status": "rolling",
+      "expected_evidence_id": "rolling-05-p1",
+      "expected_source_url": "https://synthetic.example/rolling-05/apply",
+      "expected_exact_quote": "The programme accepts applications at any time; applicants may request a start date each month.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "rolling-06",
+      "expected_window_status": "rolling",
+      "expected_evidence_id": "rolling-06-p1",
+      "expected_source_url": "https://synthetic.example/rolling-06/apply",
+      "expected_exact_quote": "Applications are accepted throughout the year, with monthly placement starts.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "rolling-07",
+      "expected_window_status": "rolling",
+      "expected_evidence_id": "rolling-07-p1",
+      "expected_source_url": "https://synthetic.example/rolling-07/apply",
+      "expected_exact_quote": "The programme accepts applications at any time; applicants may request a start date each month.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "rolling-08",
+      "expected_window_status": "rolling",
+      "expected_evidence_id": "rolling-08-p1",
+      "expected_source_url": "https://synthetic.example/rolling-08/apply",
+      "expected_exact_quote": "Applications are accepted throughout the year, with monthly placement starts.",
+      "no_update": true,
+      "adjudication_note": "Synthetic source label; verify against the frozen page text."
+    },
+    {
+      "stimulus_id": "not-stated-01",
+      "expected_window_status": "not_stated",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "Both program and apply pages were read; candidates are deliberate non-window decoys."
+    },
+    {
+      "stimulus_id": "not-stated-02",
+      "expected_window_status": "not_stated",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "Both program and apply pages were read; candidates are deliberate non-window decoys."
+    },
+    {
+      "stimulus_id": "not-stated-03",
+      "expected_window_status": "not_stated",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "Both program and apply pages were read; candidates are deliberate non-window decoys."
+    },
+    {
+      "stimulus_id": "not-stated-04",
+      "expected_window_status": "not_stated",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "Both program and apply pages were read; candidates are deliberate non-window decoys."
+    },
+    {
+      "stimulus_id": "not-stated-05",
+      "expected_window_status": "not_stated",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "Both program and apply pages were read; candidates are deliberate non-window decoys."
+    },
+    {
+      "stimulus_id": "not-stated-06",
+      "expected_window_status": "not_stated",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "Both program and apply pages were read; candidates are deliberate non-window decoys."
+    },
+    {
+      "stimulus_id": "not-stated-07",
+      "expected_window_status": "not_stated",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "Both program and apply pages were read; candidates are deliberate non-window decoys."
+    },
+    {
+      "stimulus_id": "not-stated-08",
+      "expected_window_status": "not_stated",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "Both program and apply pages were read; candidates are deliberate non-window decoys."
+    },
+    {
+      "stimulus_id": "not-checked-01",
+      "expected_window_status": "not_checked",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "No program or apply page was read; expected result is derived from frozen page-read metadata and must make no API request."
+    },
+    {
+      "stimulus_id": "not-checked-02",
+      "expected_window_status": "not_checked",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "No program or apply page was read; expected result is derived from frozen page-read metadata and must make no API request."
+    },
+    {
+      "stimulus_id": "not-checked-03",
+      "expected_window_status": "not_checked",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "No program or apply page was read; expected result is derived from frozen page-read metadata and must make no API request."
+    },
+    {
+      "stimulus_id": "not-checked-04",
+      "expected_window_status": "not_checked",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "No program or apply page was read; expected result is derived from frozen page-read metadata and must make no API request."
+    },
+    {
+      "stimulus_id": "not-checked-05",
+      "expected_window_status": "not_checked",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "No program or apply page was read; expected result is derived from frozen page-read metadata and must make no API request."
+    },
+    {
+      "stimulus_id": "not-checked-06",
+      "expected_window_status": "not_checked",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "No program or apply page was read; expected result is derived from frozen page-read metadata and must make no API request."
+    },
+    {
+      "stimulus_id": "not-checked-07",
+      "expected_window_status": "not_checked",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "No program or apply page was read; expected result is derived from frozen page-read metadata and must make no API request."
+    },
+    {
+      "stimulus_id": "not-checked-08",
+      "expected_window_status": "not_checked",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "No program or apply page was read; expected result is derived from frozen page-read metadata and must make no API request."
+    },
+    {
+      "stimulus_id": "challenge-injection-01",
+      "expected_window_status": "fixed_dates",
+      "expected_evidence_id": "challenge-injection-01-p1",
+      "expected_source_url": "https://synthetic.example/challenge-injection-01/apply",
+      "expected_exact_quote": "Applications close on 30 September 2026.",
+      "no_update": true,
+      "adjudication_note": "Page text contains an instruction-like sentence; treat it only as quoted source content."
+    },
+    {
+      "stimulus_id": "challenge-negation-01",
+      "expected_window_status": "fixed_dates",
+      "expected_evidence_id": "challenge-negation-01-p2",
+      "expected_source_url": "https://synthetic.example/challenge-negation-01/apply",
+      "expected_exact_quote": "The fixed deadline is 1 December 2026.",
+      "no_update": true,
+      "adjudication_note": "The negated rolling sentence is not positive timing evidence; cite the fixed deadline paragraph."
+    },
+    {
+      "stimulus_id": "challenge-past-date-01",
+      "expected_window_status": "fixed_dates",
+      "expected_evidence_id": "challenge-past-date-01-p1",
+      "expected_source_url": "https://synthetic.example/challenge-past-date-01/apply",
+      "expected_exact_quote": "The 2022 intake closed on 15 October 2022.",
+      "no_update": true,
+      "adjudication_note": "The status means that a fixed intake date is stated; do not compute whether it is current or open."
+    },
+    {
+      "stimulus_id": "challenge-overlap-01",
+      "expected_window_status": "unclear",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "Rolling and fixed-intake statements overlap; the app enum cannot represent both, so abstain and do not update."
+    },
+    {
+      "stimulus_id": "challenge-long-context-01",
+      "expected_window_status": "rolling",
+      "expected_evidence_id": "challenge-long-context-01-p21",
+      "expected_source_url": "https://synthetic.example/challenge-long-context-01/apply",
+      "expected_exact_quote": "Applicants may begin on the first Monday of each month; applications are accepted at any time.",
+      "no_update": true,
+      "adjudication_note": "The founding/event-date candidates are decoys; cite the rolling-start paragraph last in the list."
+    },
+    {
+      "stimulus_id": "challenge-misleading-date-01",
+      "expected_window_status": "not_stated",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "Dates and durations are present but no application deadline or intake window is stated."
+    },
+    {
+      "stimulus_id": "challenge-negative-rolling-01",
+      "expected_window_status": "fixed_dates",
+      "expected_evidence_id": "challenge-negative-rolling-01-p2",
+      "expected_source_url": "https://synthetic.example/challenge-negative-rolling-01/apply",
+      "expected_exact_quote": "Applications close on 30 April 2027.",
+      "no_update": true,
+      "adjudication_note": "The negated monthly-start sentence is not positive rolling evidence; cite the fixed deadline paragraph."
+    },
+    {
+      "stimulus_id": "challenge-mixed-intake-01",
+      "expected_window_status": "unclear",
+      "expected_evidence_id": "none",
+      "expected_source_url": null,
+      "expected_exact_quote": null,
+      "no_update": true,
+      "adjudication_note": "Both rolling-start and fixed-intake signals occur; abstain rather than forcing a single enum value."
+    }
+  ]
+}

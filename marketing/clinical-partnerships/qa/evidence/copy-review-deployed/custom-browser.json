@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-09T12:08:19.753Z",
+  "url": "https://partners-preview.goocampusglobal.com/",
+  "viewports": [
+    390,
+    1440
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "errors": [],
+  "dns_override": "Hostname mapped to 52.74.6.109 returned by Cloudflare DNS at capture time; local resolver retains NXDOMAIN",
+  "https_errors_ignored": false
+}
