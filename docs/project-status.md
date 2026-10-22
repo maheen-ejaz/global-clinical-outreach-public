@@ -2692,3 +2692,28 @@ pipeline operations. No real provider may be selected or scheduled during this t
   `/Users/maheenejaz/Developer/global-clinical-outreach-public`; it is not Codex-managed.
 - This distribution requires no Netlify publication, paid research, correspondence, migration
   or production access. No automatic sync, workflow, deployment hook or monitoring is added.
+
+
+## Public README illustration upgrade — 2026-10-22
+
+- Replaced the README's simple SVG overview with a 1536 × 1024 editorial clinical-research
+  cover, and added a matching Research → Review → Outreach illustration. Both use concise
+  accessible alt text and full-resolution optimized WebP files; provenance and checksums are
+  in `docs/images/README.md`. Old source images remain available for existing references.
+- The artwork is fictional/conceptual: no live metrics, provider/contact records, account
+  observations, vendor marks, real institutions or partnership claims. Workflow artwork
+  preserves human review and approval rather than depicting automatic sending.
+- Acceptance: both illustrations decode at full resolution with readable labels, GitHub
+  README images load, existing onboarding links remain usable, and repository checks pass.
+  Runtime, credential bindings, database, outreach state and Netlify sites are unchanged.
+- Owner/chat `01a16283-c9a7-7f40-83f0-eecfcd6c6b89`; public canonical
+  `/Users/maheenejaz/Developer/global-clinical-outreach-public`; ordinary task-owned worktree
+  `/Users/maheenejaz/Developer/global-clinical-outreach-public-illustrations`, branch
+  `codex/public-illustrations`; intake HEAD/fetched main
+  `864c5968150ea932a4489d72d1ae8b1412a995b9` at 2026-10-22T10:00:15Z. Native worktree
+  creation targets the original private repo in this chat and cannot select this public
+  repository, so this isolated worktree is outside managed roots and is not Codex-managed.
+- This is a public documentation/asset update; no application deployment is required.
+- Validation: both optimized images were decoded and visually inspected at 1536 × 1024;
+  combined transfer is 419,966 bytes. Local Markdown targets/whitespace pass; `check:pr`
+  passes 90 Python and 80 Node tests, about 2.5 seconds of suite time excluding setup.
