@@ -7,7 +7,9 @@ Maheen approved this distribution on **22 October 2026**.
   `06b5031a61eee014670411a77d73efbd00c7f5cf`, containing the cleaned team documentation from PR #98.
 - Publication adaptations: README clone URL and distribution note; onboarding access guidance;
   AGENTS/TOOLCHAIN public-origin notice; project status, publication decision and this provenance file.
-  Runtime code, tests, migrations, schemas, tracked research skill and assets come from the baseline.
+  Runtime code, tests, migrations, schemas and tracked research skill come from the baseline.
+  The later public README illustration update is documented in `docs/images/README.md`; other assets
+  retain their original provenance.
 - Git starts with an independent source commit. No private ancestor commits, branches, tags, PRs,
   issues, comments, deleted usage files, ignored `data/`, mail exports or authenticated sessions travel
   with this copy. Source references to original commits/PRs are provenance, not accessible public history.

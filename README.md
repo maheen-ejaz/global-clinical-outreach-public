@@ -1,5 +1,7 @@
 # Global Clinical Outreach
 
+![Global Clinical Outreach — research, review and connect, illustrated with a clinical campus, protected evidence archive and human reviewer](docs/images/clinical-outreach-cover.webp)
+
 A research and human-reviewed outreach system for **GooCampusWorld**. It finds providers of clinical
 observerships, electives, attachments and fellowships for international medical students and graduates,
 records sourced programme and contact information, and helps the team review partnership outreach.
@@ -9,8 +11,6 @@ This is the clean public source distribution. The original repository and its Gi
 private. See [source provenance and access boundaries](docs/public-source.md).
 It explains setup, access, current state and a ready-to-use Codex prompt. Read
 [AGENTS.md](AGENTS.md) before making changes.
-
-![Research system overview](docs/images/overview.svg)
 
 ## What we have built
 
@@ -27,6 +27,10 @@ It explains setup, access, current state and a ready-to-use Codex prompt. Read
 The repository contains **no email sender or autonomous campaign service**. Gmail delivers messages only
 under the separate human approval workflow. Attio is the current correspondence tracker; Supabase
 remains the research store. The older Supabase Outreach editor is retained as historical functionality.
+
+![Evidence before outreach — research official sources, review cached evidence, and approve outreach with human oversight](docs/images/evidence-workflow.webp)
+
+*Conceptual illustrations; the architecture and approval rules are documented below and in the linked guides.*
 
 ## Results and current state
 
