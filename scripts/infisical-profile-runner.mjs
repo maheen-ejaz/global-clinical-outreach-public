@@ -927,10 +927,8 @@ export async function runBinding(commandName, options = {}) {
   );
   child.stdout?.pipe(process.stdout);
   child.stderr?.pipe(process.stderr);
-  child.once('error', (error) => {
-    process.stderr.write(error.code === 'ENOENT'
-      ? 'Infisical CLI was not found; install it in a trusted PATH location and retry.\n'
-      : 'Infisical CLI could not start; check the executable and its permissions, then retry.\n');
+  child.once('error', () => {
+    process.stderr.write('Infisical CLI process failed; check the executable, working directory, and permissions, then retry.\n');
   });
   return superviseChild(child, {
     timeoutSeconds: command.timeoutSeconds === 0 ? 0 : command.timeoutSeconds + 30,

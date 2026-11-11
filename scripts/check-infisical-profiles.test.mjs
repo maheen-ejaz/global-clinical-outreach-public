@@ -722,8 +722,8 @@ test('reports an Infisical startup failure without exposing the error', async ()
   } finally {
     process.stderr.write = originalWrite;
   }
-  assert.match(messages[0], /not found/);
-  assert.match(messages[1], /permissions/);
+  assert.equal(messages.length, 2);
+  assert.ok(messages.every((message) => /executable, working directory, and permissions/.test(message)));
   assert.doesNotMatch(messages.join(''), /secret/);
 });
 
