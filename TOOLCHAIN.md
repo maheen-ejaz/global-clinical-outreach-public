@@ -15,7 +15,7 @@ for publication. See `docs/public-source.md`; never repoint origin or weaken the
 
 Infisical project: `Global-Clinical-Outreach` (`1b056234-5b7a-4d98-87a2-635730076e34`), dedicated to this repository.
 Runner: `scripts/infisical-profile-runner.mjs` (shared GooCampus runner, pinned to that project and this repository),
-manifest `infisical-profiles.json`, binding `.infisical.json`, Infisical CLI `>=0.43.125 <0.44.0`.
+manifest `infisical-profiles.json`, binding `.infisical.json`, the installed Infisical CLI on the runner’s trusted PATH. The required CLI commands must work; future releases are not guaranteed compatible.
 
 | Profile | Environment | Path | Variables | Commands |
 |---|---|---|---|---|
