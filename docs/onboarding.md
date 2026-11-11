@@ -24,7 +24,7 @@ provenance, update expectations and the intentional production-origin guard.
 | Read source, instructions and offline tests | Public GitHub access, local runtimes | Code, migrations, schemas, skills and documentation |
 | Contribute changes | GitHub contribution access or a fork/PR, isolated worktree | Test and build instructions; no right to alter production |
 | View the research dashboard | Maheen-approved viewer, emailed sign-in link | Browser shell only; the tracked viewer list is not a self-service invitation |
-| Run production research | Approved Infisical user access to the exact repo binding and supported CLI | Guarded runner and manifest, never service secrets |
+| Run production research | Approved Infisical user access to the exact repo binding and installed CLI | Guarded runner and manifest, never service secrets |
 | Work on project mail and CRM | Explicit task authorization plus approved office Gmail / GooCampus Attio access | Workflow and template, not the operator's sessions or message inventory |
 | Read cached pages / private evidence | Approved private transfer or authorized access to the existing store | No `data/` directory contents |
 | Publish a site | Correct site/team access and explicit consent for that release | Static source and runbook; no deployment consent |

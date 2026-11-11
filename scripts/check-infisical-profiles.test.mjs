@@ -17,7 +17,6 @@ import {
   selectBinding,
   signalExitCode,
   superviseChild,
-  validateCliVersion,
   validateCommand,
   validateManifest,
   verifyRuntimeFiles,
@@ -42,7 +41,6 @@ function validManifest() {
       defaultBranch: 'main',
       origin: 'https://github.com/maheen-ejaz/global-clinical-outreach.git',
     },
-    cliVersion: { min: '0.43.125', maxExclusive: '0.44.0' },
     profiles: {
       'dev-web': {
         environment: 'dev',
@@ -184,7 +182,7 @@ test('requires one signed-in user authentication mode and the tracked project bi
   );
 });
 
-test('pins the canonical project, repository identity, and CLI range', () => {
+test('pins the canonical project and repository identity', () => {
   const projectManifest = validManifest();
   projectManifest.projectId = '00000000-0000-0000-0000-000000000000';
   assert.match(validateManifest(projectManifest, {
@@ -195,9 +193,7 @@ test('pins the canonical project, repository identity, and CLI range', () => {
   repositoryManifest.repository.origin = 'https://github.com/other/repository.git';
   assert.match(validateManifest(repositoryManifest, binding).join(' '), /repository:invalid-origin/);
 
-  const versionManifest = validManifest();
-  versionManifest.cliVersion = { min: '0.1.0', maxExclusive: '99.0.0' };
-  assert.match(validateManifest(versionManifest, binding).join(' '), /cliVersion:invalid-range/);
+
 });
 
 test('requires exact per-path variable ownership and required inventory', () => {
@@ -407,23 +403,6 @@ test('redacts short, self-overlapping, and cross-stream chunks', () => {
   forwarder.write('aaa');
   forwarder.end();
   assert.equal(output, '[REDACTED] [REDACTED]a');
-});
-
-test('validates the pinned Infisical CLI range', () => {
-  assert.equal(
-    validateCliVersion(
-      'infisical version 0.43.125',
-      { min: '0.43.125', maxExclusive: '0.44.0' },
-    ),
-    '0.43.125',
-  );
-  assert.throws(
-    () => validateCliVersion(
-      '0.44.0',
-      { min: '0.43.125', maxExclusive: '0.44.0' },
-    ),
-    /CLI_VERSION_UNSUPPORTED/,
-  );
 });
 
 test('rejects modified runtime binding files and an unexpected Git origin', () => {
@@ -657,7 +636,7 @@ test('forwards signals, timeouts, and target exit status', async () => {
   assert.equal(await timedWait, 124);
 });
 
-test('runs the canonical user-session Infisical command after health and version checks', async () => {
+test('runs the canonical user-session Infisical command after the health check', async () => {
   const manifest = validManifest();
   const context = { root: '/repo', manifest };
   class FakeChild extends EventEmitter {
@@ -670,10 +649,6 @@ test('runs the canonical user-session Infisical command after health and version
     context,
     environment: { HOME: '/home/test', PATH: '/bin' },
     verifyRuntimeFilesImpl() { calls.push('runtime'); },
-    execFileSyncImpl(_executable, args) {
-      calls.push(args.join(' '));
-      return 'infisical version 0.43.125';
-    },
     async fetchImpl() {
       calls.push('health');
       return response(200, { message: 'Ok', date: '2026-09-07T05:00:00Z' });
@@ -689,11 +664,34 @@ test('runs the canonical user-session Infisical command after health and version
   });
   assert.equal(code, 0);
   assert.equal(calls[0], 'runtime');
-  assert.equal(calls[1], '--version');
-  assert.equal(calls[2], 'health');
-  assert.equal(calls[3].executable, 'infisical');
-  assert.ok(calls[3].args.includes(`--projectId=${projectId}`));
-  assert.equal(calls[3].options.env.INFISICAL_TOKEN, undefined);
+  assert.equal(calls[1], 'health');
+  assert.equal(calls[2].executable, 'infisical');
+  assert.ok(calls[2].args.includes(`--projectId=${projectId}`));
+  assert.equal(calls[2].options.env.INFISICAL_TOKEN, undefined);
+});
+
+test('does not probe the CLI version and propagates command failure', async () => {
+  class FakeChild extends EventEmitter {
+    stdout = { pipe() {} };
+    stderr = { pipe() {} };
+    kill() {}
+  }
+  const code = await runBinding('dev-web', {
+    context: { root: '/repo', manifest: validManifest() },
+    environment: { HOME: '/home/test' },
+    verifyRuntimeFilesImpl() {},
+    execFileSyncImpl() { throw new Error('future version 999.0.0 must not be queried'); },
+    async fetchImpl() { return response(200, { message: 'Ok', date: '2026-09-07T05:00:00Z' }); },
+    now: () => Date.parse('2026-09-07T05:00:00Z'),
+    spawnImpl(executable) {
+      assert.equal(executable, 'infisical');
+      const child = new FakeChild();
+      queueMicrotask(() => child.emit('exit', 42, null));
+      return child;
+    },
+    signalSource: new EventEmitter(),
+  });
+  assert.equal(code, 42);
 });
 
 test('keeps production commands on the existing runtime verification path', async () => {
@@ -708,7 +706,6 @@ test('keeps production commands on the existing runtime verification path', asyn
     environment: { HOME: '/home/test', PATH: '/bin' },
     verifyRuntimeFilesImpl() { calls.push('existing-runtime-guard'); },
     verifyTypeSafeSmokeRuntimeImpl() { calls.push('typesafe-guard'); },
-    execFileSyncImpl() { calls.push('infisical-version'); return 'infisical version 0.43.125'; },
     async fetchImpl() {
       calls.push('health');
       return response(200, { message: 'Ok', date: '2026-09-07T05:00:00Z' });
@@ -724,7 +721,7 @@ test('keeps production commands on the existing runtime verification path', asyn
   });
 
   assert.equal(code, 0);
-  assert.deepEqual(calls, ['existing-runtime-guard', 'infisical-version', 'health', 'infisical-run']);
+  assert.deepEqual(calls, ['existing-runtime-guard', 'health', 'infisical-run']);
 });
 
 for (const pilotCommand of ['dev-typesafe-smoke', 'dev-typesafe-pilot']) test(`runs the ${pilotCommand} checkout guard before credential access`, async () => {
@@ -741,10 +738,6 @@ for (const pilotCommand of ['dev-typesafe-smoke', 'dev-typesafe-pilot']) test(`r
     context: { root: '/repo', manifest },
     environment: { HOME: '/home/test', PATH: '/bin' },
     verifyTypeSafeSmokeRuntimeImpl() { events.push('checkout-guard'); },
-    execFileSyncImpl(_executable, args) {
-      events.push(args[0] === '--version' ? 'infisical-version' : 'other-command');
-      return 'infisical version 0.43.125';
-    },
     async fetchImpl() {
       events.push('health');
       return response(200, { message: 'Ok', date: '2026-09-07T05:00:00Z' });
@@ -760,7 +753,7 @@ for (const pilotCommand of ['dev-typesafe-smoke', 'dev-typesafe-pilot']) test(`r
   });
 
   assert.equal(code, 0);
-  assert.deepEqual(events, ['checkout-guard', 'infisical-version', 'health', 'infisical-run']);
+  assert.deepEqual(events, ['checkout-guard', 'health', 'infisical-run']);
 });
 
 for (const pilotCommand of ['dev-typesafe-smoke', 'dev-typesafe-pilot']) test(`guards ${pilotCommand} inside the injected child before key validation`, async () => {

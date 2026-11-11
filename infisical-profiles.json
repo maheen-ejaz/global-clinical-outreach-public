@@ -10,10 +10,6 @@
     "defaultBranch": "main",
     "origin": "https://github.com/maheen-ejaz/global-clinical-outreach.git"
   },
-  "cliVersion": {
-    "min": "0.43.125",
-    "maxExclusive": "0.44.0"
-  },
   "profiles": {
     "prod-pipeline": {
       "environment": "prod",

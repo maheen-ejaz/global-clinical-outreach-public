@@ -13,11 +13,6 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 export const CONTRACT_VERSION = 'com.goocampus.infisical-profile/v3';
 export const INFISICAL_API_URL = 'https://app.infisical.com/api';
 export const CANONICAL_PROJECT_ID = '1b056234-5b7a-4d98-87a2-635730076e34';
-export const SUPPORTED_CLI_RANGE = {
-  min: '0.43.125',
-  maxExclusive: '0.44.0',
-};
-
 const NAME_RE = /^[a-z][a-z0-9-]{1,62}$/;
 const ENVIRONMENT_RE = /^[a-z][a-z0-9-]{0,31}$/;
 const VARIABLE_RE = /^[A-Z][A-Z0-9_]*$/;
@@ -64,13 +59,11 @@ const TOP_LEVEL_KEYS = new Set([
   'projectId',
   'authentication',
   'repository',
-  'cliVersion',
   'profiles',
   'commands',
 ]);
 const AUTHENTICATION_KEYS = new Set(['mode']);
 const REPOSITORY_KEYS = new Set(['id', 'defaultBranch', 'origin']);
-const CLI_VERSION_KEYS = new Set(['min', 'maxExclusive']);
 const PROFILE_KEYS = new Set([
   'environment',
   'paths',
@@ -353,20 +346,6 @@ export function validateManifest(manifest, binding) {
     }
     if (manifest.repository.origin !== trusted?.origin) errors.push('repository:invalid-origin');
   }
-  if (!isObject(manifest.cliVersion)) {
-    errors.push('cliVersion:must-be-object');
-  } else {
-    unsupportedKeys(manifest.cliVersion, CLI_VERSION_KEYS, 'cliVersion', errors);
-    const minimum = parseSemver(manifest.cliVersion.min);
-    const maximum = parseSemver(manifest.cliVersion.maxExclusive);
-    if (!minimum
-      || !maximum
-      || compareSemver(minimum, maximum) >= 0
-      || manifest.cliVersion.min !== SUPPORTED_CLI_RANGE.min
-      || manifest.cliVersion.maxExclusive !== SUPPORTED_CLI_RANGE.maxExclusive) {
-      errors.push('cliVersion:invalid-range');
-    }
-  }
   if (!isObject(manifest.profiles) || Object.keys(manifest.profiles).length === 0) {
     errors.push('profiles:must-be-nonempty-object');
   }
@@ -438,32 +417,6 @@ export function validateManifest(manifest, binding) {
     if (!boundCommands.has(commandName)) errors.push(`commands.${commandName}:unbound-command`);
   }
   return errors;
-}
-
-export function parseSemver(value) {
-  if (typeof value !== 'string') return null;
-  const match = value.match(/^(?:infisical version )?(\d+)\.(\d+)\.(\d+)$/);
-  return match ? match.slice(1).map(Number) : null;
-}
-
-export function compareSemver(left, right) {
-  const a = Array.isArray(left) ? left : parseSemver(left);
-  const b = Array.isArray(right) ? right : parseSemver(right);
-  if (!a || !b) throw new ProfileError('CLI_VERSION_SCHEMA');
-  for (let index = 0; index < 3; index += 1) {
-    if (a[index] !== b[index]) return a[index] < b[index] ? -1 : 1;
-  }
-  return 0;
-}
-
-export function validateCliVersion(output, range) {
-  const version = parseSemver(String(output).trim());
-  if (!version) throw new ProfileError('CLI_VERSION_SCHEMA');
-  if (compareSemver(version, range.min) < 0
-    || compareSemver(version, range.maxExclusive) >= 0) {
-    throw new ProfileError('CLI_VERSION_UNSUPPORTED');
-  }
-  return version.join('.');
 }
 
 export function gitEnvironment(ambient, root) {
@@ -954,13 +907,6 @@ export async function runBinding(commandName, options = {}) {
       options.environment ?? process.env,
     );
   }
-  const versionOutput = (options.execFileSyncImpl ?? execFileSync)('infisical', ['--version'], {
-    cwd: context.root,
-    env: buildInjectionEnvironment(options.environment ?? process.env, context.root, command),
-    encoding: 'utf8',
-    stdio: ['ignore', 'pipe', 'ignore'],
-  });
-  validateCliVersion(versionOutput, context.manifest.cliVersion);
   await checkHealth(options.fetchImpl, options.now);
   const mode = options.preflight ? '__preflight' : '__target';
   const child = (options.spawnImpl ?? spawn)(
@@ -981,6 +927,9 @@ export async function runBinding(commandName, options = {}) {
   );
   child.stdout?.pipe(process.stdout);
   child.stderr?.pipe(process.stderr);
+  child.once('error', () => {
+    process.stderr.write('Infisical CLI could not start; install it in a trusted PATH location and retry.\n');
+  });
   return superviseChild(child, {
     timeoutSeconds: command.timeoutSeconds === 0 ? 0 : command.timeoutSeconds + 30,
     signalSource: options.signalSource,
