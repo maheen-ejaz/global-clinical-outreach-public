@@ -694,6 +694,39 @@ test('does not probe the CLI version and propagates command failure', async () =
   assert.equal(code, 42);
 });
 
+test('reports an Infisical startup failure without exposing the error', async () => {
+  class FakeChild extends EventEmitter {
+    stdout = { pipe() {} };
+    stderr = { pipe() {} };
+    kill() {}
+  }
+  const messages = [];
+  const originalWrite = process.stderr.write;
+  process.stderr.write = (value) => { messages.push(value); return true; };
+  try {
+    for (const errorCode of ['ENOENT', 'EACCES']) {
+      const code = await runBinding('dev-web', {
+        context: { root: '/repo', manifest: validManifest() },
+        verifyRuntimeFilesImpl() {},
+        async fetchImpl() { return response(200, { message: 'Ok', date: '2026-09-07T05:00:00Z' }); },
+        now: () => Date.parse('2026-09-07T05:00:00Z'),
+        spawnImpl() {
+          const child = new FakeChild();
+          queueMicrotask(() => child.emit('error', Object.assign(new Error('secret'), { code: errorCode })));
+          return child;
+        },
+        signalSource: new EventEmitter(),
+      });
+      assert.equal(code, 1);
+    }
+  } finally {
+    process.stderr.write = originalWrite;
+  }
+  assert.match(messages[0], /not found/);
+  assert.match(messages[1], /permissions/);
+  assert.doesNotMatch(messages.join(''), /secret/);
+});
+
 test('keeps production commands on the existing runtime verification path', async () => {
   class FakeChild extends EventEmitter {
     stdout = { pipe() {} };
